@@ -12,7 +12,9 @@
                 <header></header>
                 <nav></nav>
                 <main>
-                    <h1><?php{ echo "Hello World";}?></h1>
+                    <h1><?php
+                    echo "Hello world!";
+                    ?></h1>
                 </main>
                 <footer></footer>
             </div><!--end of content container tag-->
