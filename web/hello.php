@@ -15,6 +15,10 @@
                     <h1><?php
                     echo "Hello world!";
                     ?></h1>
+                    <h2><?php        
+                    $num = 3 / 4; 
+                    print $num;
+                    ?></h2>
                 </main>
                 <footer></footer>
             </div><!--end of content container tag-->
