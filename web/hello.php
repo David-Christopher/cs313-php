@@ -16,8 +16,8 @@
                     echo "Hello world!";
                     ?></h1>
                     <h2><?php        
-                    $value = 4 + "cat";
-                    print $value;
+                    $num = 3 / 4; 
+print $num;
                     ?></h2>
                 </main>
                 <footer></footer>
