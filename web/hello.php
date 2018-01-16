@@ -17,7 +17,7 @@
                     ?></h1>
                     <h2><?php        
                     $num = 3 / 4; 
-print $num;
+                    print $num;
                     ?></h2>
                 </main>
                 <footer></footer>
