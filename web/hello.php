@@ -15,6 +15,10 @@
                     <h1><?php
                     echo "Hello world!";
                     ?></h1>
+                    <h2><?php        
+                    $value = 4 + "cat";
+                    print $value;
+                    ?></h2>
                 </main>
                 <footer></footer>
             </div><!--end of content container tag-->
