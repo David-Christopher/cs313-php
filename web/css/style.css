@@ -3,7 +3,7 @@ h1{
 	font-size: 40px;
 }
 
-#sectionChangingColor h1{
+#sectionChangingColor h1, #blueSection h1{
 	color: #1919E8;
 	text-align: center;
 }
@@ -19,6 +19,7 @@ h1{
 
 #buttonPosition{
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #blueSection{
@@ -29,5 +30,6 @@ h1{
 
 #blueSection h1:hover{
 	color: #ffffff;
+	font-weight: 900;
 }
 
