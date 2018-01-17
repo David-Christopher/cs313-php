@@ -10,12 +10,9 @@ h1{
 }
 
 #sectionChangingColor{
+	text-align: center;
 	background-color: #ff9333;
     padding-bottom: 30px; 
-}
-
-#sectionChangingColor input{
-	margin-left: 35px;
 }
 
 #buttonPosition{
@@ -28,6 +25,7 @@ h1{
 }
 
 #blueSection{
+	text-align: center;
 	background-color: #1919E8;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -35,6 +33,10 @@ h1{
 
 #blueSection h1{
 	color: #ffffff;
+}
+
+#onOffButton{
+	text-align: center;
 }
 
 
