@@ -27,6 +27,7 @@ h1{
 
 #buttonPosition:hover h1, #blueSection:hover h1, #sectionChangingColor:hover h1{
 	font-weight: bolder;	
+	transition: .5s;
 }
 
 #blueSection{
