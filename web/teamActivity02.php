@@ -24,7 +24,9 @@
                     <div id="blueSection">
                         <h1 id="supriseFont">This Section Can Be Turned On or Off</h1>
                     </div>
-                    <button id="onOffButton" type="button">Click Off</button>
+                    <div id="on_offSection">
+                        <button id="onOffButton" type="button">Click Off</button>
+                    </div>
                 </main>
                 <footer>
                 <!--onClick event for Click Me button-->
