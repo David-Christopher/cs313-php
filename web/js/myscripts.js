@@ -1,10 +1,9 @@
-function displayClicked() {
+//Click Me button toggle text
     $("#testButton").click(function () {
         $(this).text(function(i, displayClicked){
             return displayClicked === 'Click Me' ? 'Clicked!' : 'Click Me'
         })
     });
-}
 
 function displayColor() {
    var colorText = "clrName";
@@ -17,9 +16,7 @@ function displayColor() {
 
    changeThis.style.backgroundColor  = colorValue;
 }
-
-displayFade() {
+//Fade in and out div
 	$( document ).click(function() {
         $( "#blueSection" ).toggle( "highlight" );
     });
-}
