@@ -1,5 +1,9 @@
 function displayClicked() {
-   document.getElementById("testButton").innerHTML = "Clicked!";
+    $("#testButton").click(function () {
+        $(this).text(function(i, displayClicked){
+            return displayClicked === 'Click Me' ? 'Clicked!' : 'Click Me'
+        })
+    });
 }
 
 function displayColor() {
@@ -10,6 +14,12 @@ function displayColor() {
  
    var firstDiv = "sectionChangingColor";
    var changeThis = document.getElementById(firstDiv);
-   
+
    changeThis.style.backgroundColor  = colorValue;
+}
+
+displayFade() {
+	$( document ).click(function() {
+        $( "#blueSection" ).toggle( "highlight" );
+    });
 }

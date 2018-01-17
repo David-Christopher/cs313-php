@@ -19,7 +19,7 @@
                     </div>
                     <div id="buttonPosition">
                         <h1>See What I Do!</h1>
-                        <button id="testButton" type="button">Click Me</button>
+                        <button id="testButton" type="button" onclick="displayClicked()">Click Me</button>
                     </div>
                     <div id="blueSection">
                         <h1 id="supriseFont">This Section Can Be Turned On or Off</h1>
@@ -29,10 +29,14 @@
                 <footer>
                 <!--onClick event for Click Me button-->
                     <script>
-                        $("#testButton").click(function () {
-                            $(this).text(function(i, displayClicked){
-                               return displayClicked === 'Click Me' ? 'Clicked!' : 'Click Me'
-                            })
+                        $(document).ready(function(){ 
+                            $(".button_contact").click(function() { 
+                                $("#contact_form").fadeIn("slow");
+                            });
+
+                        $(".contact_close").click(function() { 
+                            $("#contact_form").fadeOut("slow"); 
+                          });
                         });
                     </script>
                 </footer>
