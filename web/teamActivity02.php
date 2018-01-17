@@ -17,10 +17,11 @@
                         <input type="submit" value="Change Color" id="colorButton" onclick="displayColor()">
                     </div>
                     <div id="buttonPosition">
+                        <h1>See What I Do!</h1>
                         <button id="testButton" type="button" onclick="displayClicked()">Click Me</button>
                     </div>
                     <div id="blueSection">
-                        <h1 id="supriseFont">This Section Can Be Turned On or Off<h1>
+                        <h1 id="supriseFont">This Section Can Be Turned On or Off</h1>
                         <button id="onOffButton" type="button" onclick="displayFade()">Click Me</button>
                     </div>
                 </main>
