@@ -1,6 +1,7 @@
 h1{
 	color: #191919;
 	font-size: 40px;
+	font-weight: 100;
 }
 
 #sectionChangingColor h1, #blueSection h1{
