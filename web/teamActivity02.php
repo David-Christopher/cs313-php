@@ -15,7 +15,7 @@
                 <main>
                     <div id="sectionChangingColor">
                         <h1>Change the background color for this section by entering a color below.</h1>
-                        <input type="color" name="clrName" placeholder="Enter Color Name Here"></input>
+                        <input type="text" name="clrName" placeholder="Enter Color Name Here"></input>
                         <input type="submit" value="Change Color" id="colorButton" onclick="displayColor()">
                     </div>
                     <div id="buttonPosition">
