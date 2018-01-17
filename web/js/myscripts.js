@@ -1,14 +1,12 @@
 
 function displayColor() {
-   var colorText = "clrName";
-   var colorChange = document.getElementsById(colorText);
-   
-   var colorValue = colorChange.value;
- 
-   var firstDiv = "sectionChangingColor";
-   var changeThis = document.getElementById(firstDiv);
+	var textColor = "clrName";
+	var enteredColor = document.getElementById(textColor);
+ 	var divColor = "sectionChangingColor";
+	var div = document.getElementById(divColor);
 
-   changeThis.style.backgroundColor  = colorValue;
+	var colorValue = enteredColor.value;
+	div.style.backgroundColor = colorValue;
 }
 
 
