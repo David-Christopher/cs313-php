@@ -2,3 +2,32 @@ h1{
 	color: #191919;
 	font-size: 40px;
 }
+
+#sectionChangingColor h1{
+	color: #1919E8;
+	text-align: center;
+}
+
+#sectionChangingColor{
+	background-color: #ff9333;
+    padding-bottom: 30px; 
+}
+
+#sectionChangingColor input{
+	margin-left: 35px;
+}
+
+#buttonPosition{
+    padding-top: 20px;
+}
+
+#blueSection{
+	background-color: #1919E8;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#blueSection h1:hover{
+	color: #ffffff;
+}
+
