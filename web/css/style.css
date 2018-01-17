@@ -56,6 +56,10 @@ h1{
 	cursor: pointer;
 }
 
+#clrName{
+	margin-top: 20px;
+}
+
 .page-content-container{
 	max-width: 1060px;
 	margin: auto;
