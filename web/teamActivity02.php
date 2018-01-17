@@ -39,7 +39,7 @@
                         //Click On/Off button toggle text
                         $("#onOffButton").click(function () {
                             $(this).text(function(i, On_Off){
-                                return On_Off === 'Click Off' ? 'Click On!' : 'Click Off'
+                                return On_Off === 'Click Off' ? 'Click On' : 'Click Off'
                             })
                         });
 

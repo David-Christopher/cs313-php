@@ -22,8 +22,8 @@ h1{
     padding-bottom: 20px;
 }
 
-#buttonPosition:hover #buttonPosition h1, #blueSection:hover #blueSection h1, #sectionChangingColor:hover #sectionChangingColor h1{
-	font-weight: 999;	
+#buttonPosition:hover h1, #blueSection:hover h1, #sectionChangingColor:hover h1{
+	font-weight: bolder;	
 }
 
 #blueSection{
