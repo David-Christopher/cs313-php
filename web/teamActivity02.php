@@ -23,18 +23,25 @@
                     </div>
                     <div id="blueSection">
                         <h1 id="supriseFont">This Section Can Be Turned On or Off</h1>
-                        <button id="onOffButton" type="button">Click Me</button>
                     </div>
+                    <button id="onOffButton" type="button">Click Off</button>
                 </main>
                 <footer>
                 <!--onClick event for Click Me button-->
                     <script>
                         //Click Me button toggle text
-                            $("#testButton").click(function () {
-                                $(this).text(function(i, displayClicked){
-                                    return displayClicked === 'Click Me' ? 'Clicked!' : 'Click Me'
-                                })
-                            });
+                        $("#testButton").click(function () {
+                            $(this).text(function(i, displayClicked){
+                                return displayClicked === 'Click Me' ? 'Clicked!' : 'Click Me'
+                            })
+                        });
+
+                        //Click On/Off button toggle text
+                        $("#onOffButton").click(function () {
+                            $(this).text(function(i, On_Off){
+                                return On_Off === 'Click Off' ? 'Click On!' : 'Click Off'
+                            })
+                        });
 
                         //Fade in and out div
                         $("#onOffButton").click(function() {
