@@ -3,7 +3,13 @@ function displayClicked() {
 }
 
 function displayColor() {
-   var colorChange = document.getElementsByName("clrName").value;
-   var changeThis = document.getElementById("sectionChangingColor");
-   changeThis.style.backgroundColor  = colorChange;
+   var colorText = "clrName";
+   var colorChange = document.getElementsById(colorText);
+   
+   var colorValue = colorChange.value;
+ 
+   var firstDiv = "sectionChangingColor";
+   var changeThis = document.getElementById(firstDiv);
+   
+   changeThis.style.backgroundColor  = colorValue;
 }

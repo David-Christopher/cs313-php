@@ -28,8 +28,8 @@ h1{
 	padding-bottom: 20px;
 }
 
-#blueSection:hover + #blueSection h1{
+#blueSection h1{
 	color: #ffffff;
-	font-weight: 900;
 }
+
 
