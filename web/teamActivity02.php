@@ -22,7 +22,7 @@
                         <button id="testButton" type="button" onclick="displayClicked()">Click Me</button>
                     </div>
                     <div id="blueSection">
-                        <h1 id="supriseFont">This is the Blue Section<h1>
+                        <h1 id="supriseFont">This Section is Permanently BLUE<h1>
                     </div>
                 </main>
                 <footer></footer>
