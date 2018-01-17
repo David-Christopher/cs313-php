@@ -17,6 +17,7 @@ h1{
 
 #colorButton{
 	margin-top: 20px;
+	cursor: pointer;
 }
 
 #buttonPosition{
@@ -25,9 +26,13 @@ h1{
     padding-bottom: 20px;
 }
 
+#testButton{
+	cursor: pointer;	
+}
+
 #buttonPosition:hover h1, #blueSection:hover h1, #sectionChangingColor:hover h1{
 	font-weight: bolder;	
-	transition: font-weight 1s ease-in-out;
+	transition: font-weight .3s ease-in-out;
 }
 
 #blueSection{
@@ -47,6 +52,7 @@ h1{
 
 #onOffButton{
 	margin-top: 20px;
+	cursor: pointer;
 }
 
 
