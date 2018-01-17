@@ -15,6 +15,10 @@ h1{
     padding-bottom: 30px; 
 }
 
+#colorButton{
+	margin-top: 20px;
+}
+
 #buttonPosition{
 	text-align: center;
     padding-top: 20px;
