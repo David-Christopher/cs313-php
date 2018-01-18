@@ -14,10 +14,10 @@
                 		<li><a href="https://vast-savannah-73411.herokuapp.com/">Introduction</a></li>
                 		<li><a href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a></li>
                 	</nav>
-                	<img src="images/CDlogo.png">
+                	<img id="logo" src="images/CDlogo.png">
                 </header>
                 <main>
-                	<img src="images/lake-tahoe.jpg">
+                	<img id="main_img" src="images/lake-tahoe.jpg">
                 	<div>
 	                	<img src="images/dash.png">
 	                    <h1>Web Design & Development</h1>

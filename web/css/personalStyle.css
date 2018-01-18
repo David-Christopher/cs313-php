@@ -1,1 +1,15 @@
 /*personalStyle.css*/
+
+/*////////////////////////////*/
+         /*HOME PAGE*/
+/*////////////////////////////*/
+#logo{
+    margin: auto;
+    width: 494px;
+    display: block;
+}    
+
+#main_img{
+	display: block;
+    margin: auto;
+}
