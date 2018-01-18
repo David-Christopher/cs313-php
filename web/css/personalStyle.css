@@ -3,10 +3,18 @@
 /*////////////////////////////*/
          /*HOME PAGE*/
 /*////////////////////////////*/
+body{
+	margin: 0px;
+}
+
 #logo{
     margin: auto;
     width: 494px;
     display: block;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -263px;
+    margin-top: 50px;
 }    
 
 #main_img{
