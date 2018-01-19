@@ -12,23 +12,17 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<link href="css/personalStyle.css" type="text/css" rel="stylesheet"/>
+	<script src="js/personalScripts.js"></script>
 </head>
     <body>
         <div class="wrapper"><!--background image applied here-->
             <div class="page-content-container"><!--content container applied here-->
                 <header>
                 	<div class="nav-background">
-	                	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-						   <div class="collapse navbar-collapse" id="navbarNav">
-						    <ul class="navbar-nav">
-						      <li class="nav-item active">
-						        <a class="nav-link" href="https://vast-savannah-73411.herokuapp.com/">Introduction</a>
-						      </li>
-						      <li class="nav-item">
-						        <a class="nav-link" href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a>
-						      </li>
-						    </ul>
-						  </div>
+	                	<nav class="topnav" id="myTopnav">
+						  <a href="https://vast-savannah-73411.herokuapp.com/" class="active">Introduction</a>
+						  <a href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a>
+						  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
 						</nav>
 	               	</div>
                 	<img id="logo" src="images/CDlogo.png">
