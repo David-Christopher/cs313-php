@@ -386,3 +386,19 @@ footer img{
 	}
 
 }
+
+@media all and (min-width: 1360px) {
+
+/*////////////////////////////*/
+         /*HOME PAGE*/
+/*////////////////////////////*/
+
+	.personalInfo{
+	    margin-top: -410px;
+	}
+
+	footer{
+		margin-top: 245px;
+	}
+
+}
