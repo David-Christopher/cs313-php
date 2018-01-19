@@ -7,6 +7,10 @@ body{
 	margin: 0px;
 }
 
+li{
+	font-family: 'Open Sans', sans-serif;
+}
+
 #logo{
     margin: auto;
     width: 494px;
