@@ -309,5 +309,41 @@ footer img{
 /*////////////////////////////*/
          /*HOME PAGE*/
 /*////////////////////////////*/
+	
+	.topnav a{
+		font-size: 22px;
+		width: 322px;
+	}
 
+	#logo{
+	    width: 375px;
+	    margin-bottom: -210px;
+	}
+
+	.personalInfo{
+	    width: 865px;
+	    margin-top: -323px;
+	}
+
+	.personalInfo h2{
+		padding-top: 50px;
+		font-size: 105px;
+	}
+
+	img.not_mobile{
+		width: 154px;
+	}
+
+	footer{
+    	margin-top: 158px;
+    	padding: 40px 0px;
+	}
+
+	footer h3{
+    	font-size: 35px;
+	}
+
+	footer p{
+    	font-size: 18px;
+	}
 }
