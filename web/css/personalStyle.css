@@ -349,4 +349,8 @@ footer img{
 	footer p{
     	font-size: 18px;
 	}
+
+	footer div{
+		width: 865px;
+	}
 }
