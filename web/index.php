@@ -45,7 +45,7 @@
                 			<p></p>
                 		</div>
                 		<div id="right">
-                			<img src="">
+                			<img src="images/print.png">
                 			<p>Print Resume</p>
                 		</div>
                 	</div>

@@ -75,7 +75,8 @@ nav a{
 }
 
 .personalInfo{
-	margin-top: -150px;
+    margin-top: -75px;
+    text-align: center;
 }
 
 .personalInfo h1{
@@ -84,7 +85,16 @@ nav a{
 }
 
 footer{
-	margin-top: 20px;
+	margin-top: 10px;
+	height: 200px;
+}
+
+footer div{
+	height: 100%;
+}
+
+footer h3{
+	padding: 15px;
 }
 
 @media all and (min-width: 342px) {
