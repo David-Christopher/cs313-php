@@ -75,6 +75,10 @@ nav a{
 }
 
 @media screen and (max-width: 600px){
+  .topnav{
+    width: 255px;
+    margin: auto;
+  }
   
   .topnav a{
   	display: none;
