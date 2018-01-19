@@ -17,6 +17,10 @@ h1, h2, h3, h4, p, a{
 	background-color: #212121;
 }
 
+nav{
+
+}
+
 nav li{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
@@ -35,7 +39,6 @@ nav a{
     position: relative;
     z-index: 10;
     margin-bottom: -263px;
-    margin-top: 50px;
 }    
 
 #main_img{
