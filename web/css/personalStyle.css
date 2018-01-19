@@ -86,12 +86,23 @@ nav a{
 }
 
 footer{
-	margin-top: 36px;
-	height: 200px;
+    margin-top: 36px;
+    padding-bottom: 15px;
 }
 
 footer h3{
 	padding: 15px;
+}
+
+footer p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer img{
+	float: left;
+    margin: 15px;
+    margin-top: 0px;
 }
 
 @media all and (min-width: 342px) {
