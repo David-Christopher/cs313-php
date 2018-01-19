@@ -273,6 +273,7 @@ footer img{
 	.personalInfo{
 		margin: auto;
 		width: 760px;
+		margin-top: -195px;
 	}
 	
 	.personalInfo h1{
