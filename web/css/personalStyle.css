@@ -14,11 +14,7 @@ h1, h2, h3, h4, p, a{
 	color: #ffffff;
 }
 
-footer{
-	background-color: #212121;
-}
-
-.nav-background{
+.nav-background, footer{
 	background-color: #333;
 }
 
@@ -79,11 +75,7 @@ nav a{
 }
 
 @media screen and (max-width: 600px){
-  nav#myTopnav{
-    width: 255px;
-    margin: auto;
-  }
-
+  
   .topnav a{
   	display: none;
   }
@@ -117,22 +109,9 @@ nav a{
     text-align: left;
   }
 
-  #logo{
-	float: none;
-	clear: both;
-    margin: auto;
-    width: 494px;
-    display: block;
-    position: relative;
-    z-index: 10;
-    margin-bottom: -263px;
-  }    
+}
 
-  #main_img{
-	display: block;
-    margin: auto;
-    width: 100%;
-  }
+@media all and (min-width: 600px){
 
 }
 
@@ -144,5 +123,22 @@ nav a{
 
 	nav li{
 		font-size: 30px;
+	}
+
+	#logo{
+		float: none;
+		clear: both;
+	    margin: auto;
+	    width: 494px;
+	    display: block;
+	    position: relative;
+	    z-index: 10;
+	    margin-bottom: -263px;
+	}    
+
+	#main_img{
+		display: block;
+	    margin: auto;
+	    width: 100%;
 	}
 }
