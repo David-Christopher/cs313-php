@@ -3,6 +3,7 @@
 /*////////////////////////////*/
          /*HOME PAGE*/
 /*////////////////////////////*/
+
 body{
 	margin: 0px;
 	height: 100%;
@@ -33,16 +34,44 @@ nav a{
 }
 
 #logo{
-    margin: auto;
-    width: 494px;
-    display: block;
-    position: relative;
-    z-index: 10;
-    margin-bottom: -263px;
+	width: 100px;
+    float: left;
 }    
 
 #main_img{
 	display: block;
     margin: auto;
     width: 100%;
+}
+
+@media all and (min-width: 342px) {
+
+}
+
+@media all and (min-width: 1060px) {
+
+/*////////////////////////////*/
+         /*HOME PAGE*/
+/*////////////////////////////*/
+
+	nav li{
+		font-size: 30px;
+	}
+
+	#logo{
+		float: none;
+		clear: both;
+	    margin: auto;
+	    width: 494px;
+	    display: block;
+	    position: relative;
+	    z-index: 10;
+	    margin-bottom: -263px;
+	}    
+
+	#main_img{
+		display: block;
+	    margin: auto;
+	    width: 100%;
+	}
 }
