@@ -29,7 +29,7 @@
                 </header>
                 <main>
                 	<img id="main_img" src="images/lake-tahoe.jpg">
-                	<div>
+                	<div class="personalInfo">
 	                	<img src="images/dash.png">
 	                    <h1>Web Design & Development</h1>
 	                    <img src="images/dash.png">
