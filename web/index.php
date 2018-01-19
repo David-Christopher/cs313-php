@@ -11,10 +11,12 @@
         <div class="wrapper"><!--background image applied here-->
             <div class="page-content-container"><!--content container applied here-->
                 <header>
-                	<nav>
-                		<li><a href="https://vast-savannah-73411.herokuapp.com/">Introduction</a></li>
-                		<li><a href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a></li>
-                	</nav>
+                	<div class="nav-background">
+	                	<nav>
+	                		<li><a href="https://vast-savannah-73411.herokuapp.com/">Introduction</a></li>
+	                		<li><a href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a></li>
+	                	</nav>
+	               	</div>
                 	<img id="logo" src="images/CDlogo.png">
                 </header>
                 <main>

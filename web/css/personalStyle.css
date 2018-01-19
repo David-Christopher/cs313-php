@@ -7,8 +7,23 @@ body{
 	margin: 0px;
 }
 
-li{
+h1, h2, h3, h4, p, a{
+	color: #ffffff;
+}
+
+.nav-background, footer{
+	background-color: #212121;
+}
+
+nav li{
 	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	list-style: none;
+	display: inline-block;
+}
+
+nav a{
+	text-decoration: none;
 }
 
 #logo{
@@ -24,4 +39,5 @@ li{
 #main_img{
 	display: block;
     margin: auto;
+    width: 100%;
 }
