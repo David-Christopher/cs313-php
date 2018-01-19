@@ -263,6 +263,44 @@ footer img{
 		padding-bottom: 4px;
 	}
 
+	.not_mobile{
+		display: inline-block;
+	    float: left;
+	    z-index: 11;
+	    position: relative;
+	}
+
+	.personalInfo{
+		margin: auto;
+		width: 760px;
+	}
+	
+	.personalInfo h1{
+		font-size: 38px;
+	    float: left;
+	    z-index: 11;
+	    position: relative;
+	}
+
+	img.not_mobile {
+	    height: 4px;
+	    width: 100px;
+	    margin: auto 15px;
+	    margin-top: 20px;
+	}
+
+	.personalInfo h2{
+	    font-size: 92px;
+	}
+
+	footer {
+	    margin-top: 45px;
+	}
+
+	footer div{
+		width: 760px;
+		margin: auto;
+	}
 }
 
 @media all and (min-width: 1060px) {
