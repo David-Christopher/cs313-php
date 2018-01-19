@@ -47,7 +47,7 @@ h1, h2, h3, h4, p, a{
   display: none;
 }
 
-nav li{
+nav a{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
 	list-style: none;
@@ -113,12 +113,35 @@ footer img{
     margin-top: 0px;
 }
 
-@media all and (min-width: 342px) {
+@media all and (min-width: 400px) {
 
+/*////////////////////////////*/
+         /*HOME PAGE*/
+/*////////////////////////////*/
+
+	.personalInfo {
+	    margin-top: -128px;
+	}
+
+	.personalInfo h1{
+		font-size: 25px;
+	}
+
+	.personalInfo h2{
+		font-size: 44px;
+	}
+
+	footer {
+	    margin-top: 45px;
+	}
 }
 
 @media screen and (max-width: 600px){
   
+/*////////////////////////////*/
+         /*HOME PAGE*/
+/*////////////////////////////*/
+
   	.topnav a{
   		display: none;
   	}
@@ -152,6 +175,11 @@ footer img{
 }
 
 @media all and (min-width: 600px){
+
+/*////////////////////////////*/
+         /*HOME PAGE*/
+/*////////////////////////////*/
+	
 	header{
 		background-color: #333;
     	padding-bottom: 7px;
@@ -179,17 +207,29 @@ footer img{
 		float: none;
     	margin: 10px 0px 0px 15px;
 	}
+
+	.personalInfo {
+	    margin-top: -195px;
+	}
+
+	.personalInfo h1{
+		font-size: 30px;
+	}
+
+	.personalInfo h2{
+		font-size: 62px;
+	}
+
+	footer {
+	    margin-top: 86px;
+	}
 }
 
-@media all and (min-width: 1060px) {
+@media all and (min-width: 800px){
 
 /*////////////////////////////*/
          /*HOME PAGE*/
 /*////////////////////////////*/
-
-	nav li{
-		font-size: 30px;
-	}
 
 	#logo{
 		float: none;
@@ -207,4 +247,13 @@ footer img{
 	    margin: auto;
 	    width: 100%;
 	}
+
+}
+
+@media all and (min-width: 1060px) {
+
+/*////////////////////////////*/
+         /*HOME PAGE*/
+/*////////////////////////////*/
+
 }
