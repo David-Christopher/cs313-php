@@ -34,18 +34,7 @@
                     </div>
                 </main>
                 <footer>
-                    <div>
-                        <div id="left">
-                            <h3>About</h3>
-                        </div>
-                        <div id="center">
-                            <p>Northern California-born, Christopher David is well acquainted with beautiful sceneries. Lake Tahoe is a specific treasure trove of design inspiration. Christopher is a senior at BYU-I with a few years of web design and development field experience. Graduating in April will open new doors and adventures as he steps into the career field bringing with him a seasoned portfolio of skills and talents. </p>
-                        </div>
-                        <div id="right">
-                            <a href="/images/Resume1-19-18.pdf" download><img src="images/print.png"></a>
-                            <a href="/images/Resume1-19-18.pdf" download><p>Print Resume</p></a>
-                        </div>
-                    </div>
+                    
                 </footer>
             </div><!--end of content container tag-->
         </div>
