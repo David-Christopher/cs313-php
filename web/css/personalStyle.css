@@ -74,6 +74,19 @@ nav a{
 	display: none;
 }
 
+.personalInfo{
+	margin-top: -150px;
+}
+
+.personalInfo h1{
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+}
+
+footer{
+	margin-top: 20px;
+}
+
 @media all and (min-width: 342px) {
 
 }
