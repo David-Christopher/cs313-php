@@ -81,6 +81,7 @@ nav a{
 
   .topnav a{
   	display: none;
+  	float: right;
   }
 
   .topnav a.icon{
