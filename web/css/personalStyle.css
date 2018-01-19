@@ -191,7 +191,7 @@ footer img{
 
 	.topnav{
 		float: right;
-    	width: 260px;
+    	width: 265px;
 	}
 
 	.active{
@@ -232,20 +232,35 @@ footer img{
 /*////////////////////////////*/
 
 	#logo{
-		float: none;
-		clear: both;
+	    float: none;
+	    clear: both;
 	    margin: auto;
-	    width: 494px;
+	    width: 298px;
 	    display: block;
 	    position: relative;
 	    z-index: 10;
-	    margin-bottom: -263px;
+	    margin-bottom: -170px;
+	    padding-top: 10px;
 	}    
 
 	#main_img{
 		display: block;
 	    margin: auto;
 	    width: 100%;
+	}
+
+	.topnav{
+		float: none;
+		width: 265px;
+		margin: auto;
+	}
+
+	.topnav a:hover{
+		background-color: #4CAF50;
+	}
+	
+	header{
+		padding-bottom: 4px;
 	}
 
 }
