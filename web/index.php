@@ -30,9 +30,9 @@
                 <main>
                 	<img id="main_img" src="images/lake-tahoe.jpg">
                 	<div class="personalInfo">
-	                	<img src="images/dash.png">
+	                	<img class="not_mobile" src="images/dash.png">
 	                    <h1>Web Design & Development</h1>
-	                    <img src="images/dash.png">
+	                    <img class="not_mobile" src="images/dash.png">
 	                    <h2>Christopher David</h2>
                 	</div>
                 </main>

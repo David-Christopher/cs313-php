@@ -70,8 +70,8 @@ nav a{
     width: 100%;
 }
 
-.personalInfo{
-	
+.not_mobile{
+	display: none;
 }
 
 @media all and (min-width: 342px) {
