@@ -402,3 +402,53 @@ footer img{
 	}
 
 }
+
+@media all and (min-width: 1460px) {
+
+/*////////////////////////////*/
+         /*HOME PAGE*/
+/*////////////////////////////*/
+	
+	#logo{
+	    width: 500px;
+	    margin-bottom: -275px;
+	}
+
+	img.not_mobile{
+    	width: 205px;
+	}
+
+	.personalInfo{
+	    margin-top: -435px;
+	    width: 1060px;
+	}
+
+	.personalInfo h1{
+		font-size: 45px;
+	}
+
+	.personalInfo h2{
+		font-size: 129px;
+	}
+
+	footer{
+		margin-top: 236px;
+	}
+
+	footer div{
+	    width: 1060px;
+	}
+
+	footer h3{
+	    font-size: 40px;
+	}
+
+	footer p{
+	    font-size: 20px;
+	}
+
+	div#right{
+		padding-top: 25px;
+	}
+
+}
