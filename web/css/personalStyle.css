@@ -76,6 +76,10 @@ nav a{
 
 @media screen and (max-width: 600px){
   .topnav a{
+  	float: right;
+  }
+
+  .topnav a{
   	display: none;
   }
 
