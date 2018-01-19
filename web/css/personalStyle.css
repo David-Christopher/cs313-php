@@ -5,6 +5,8 @@
 /*////////////////////////////*/
 body{
 	margin: 0px;
+	height: 100%;
+    background-color: #212121;
 }
 
 h1, h2, h3, h4, p, a{
