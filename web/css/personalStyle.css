@@ -310,9 +310,12 @@ footer img{
          /*HOME PAGE*/
 /*////////////////////////////*/
 	
+	.topnav{
+		width: 322px;
+	}
+
 	.topnav a{
 		font-size: 22px;
-		width: 322px;
 	}
 
 	#logo{
