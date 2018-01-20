@@ -13,6 +13,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<link href="css/personalStyle.css" type="text/css" rel="stylesheet"/>
 	<script src="js/personalScripts.js"></script>
+	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
     <body>
         <div class="wrapper"><!--background image applied here-->
