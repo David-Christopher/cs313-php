@@ -25,10 +25,10 @@
                           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
                         </nav>
                     </div>
-                    <img id="logo" src="images/CDlogo.png">
+                    <img id="logo" src="images/CDlogo.png" alt="David Design Logo">
                 </header>
                 <main>
-                    <img id="main_img" src="images/lake-tahoe.jpg">
+                    <img id="main_img" src="images/lake-tahoe.jpg" alt="Free Pixabay Lake Tahoe Picture">
                     <div class="personalInfo">
                         <h2>Coming Soon...</h2>
                     </div>

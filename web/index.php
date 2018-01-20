@@ -25,14 +25,14 @@
 						  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
 						</nav>
 	               	</div>
-                	<img id="logo" src="images/CDlogo.png">
+                	<img id="logo" src="images/CDlogo.png" alt="David Design Logo">
                 </header>
                 <main>
-                	<img id="main_img" src="images/lake-tahoe.jpg">
+                	<img id="main_img" src="images/lake-tahoe.jpg" alt="Free Pixabay Lake Tahoe Picture">
                 	<div class="personalInfo">
-	                	<img class="not_mobile" src="images/dash.png">
+	                	<img class="not_mobile" src="images/dash.png" alt="Custom Dash Word Art">
 	                    <h1>Web Design & Development</h1>
-	                    <img class="not_mobile" src="images/dash.png">
+	                    <img class="not_mobile" src="images/dash.png" alt="Custom Dash Word Art">
 	                    <h2>Christopher David</h2>
                 	</div>
                 </main>
@@ -45,7 +45,7 @@
                 			<p>Northern California-born, Christopher David is well acquainted with beautiful sceneries. Lake Tahoe is a specific treasure trove of design inspiration. Christopher is a senior at BYU-I with a few years of web design and development field experience. Graduating in April will open new doors and adventures as he steps into the career field bringing with him a seasoned portfolio of skills and talents. </p>
                 		</div>
                 		<div id="right">
-                			<a href="/images/Resume1-19-18.pdf" download><img src="images/print.png"></a>
+                			<a href="/images/Resume1-19-18.pdf" download><img src="images/print.png" alt="Custom Print Resume Icon"></a>
                 			<a href="/images/Resume1-19-18.pdf" download><p>Print Resume</p></a>
                 		</div>
                 	</div>
