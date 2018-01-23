@@ -20,15 +20,15 @@
                     <?php $allBoxes = $_POST['countriesVisited'];
                         if(empty($allBoxes))
                         {
-                            echo("You didn't select any countries.");
+                            echo("You didn't select any countries.".<br>);
                         }
                         else
                         {
                             $total = count($allBoxes);
-                            echo("You selected $total countries: ");
+                            echo("You selected $total countries: ".<br>);
                             for($i=0; $i < $total; $i++)
                             {
-                                echo($allBoxes[$i] . ", ");
+                                echo($allBoxes[$i] .<br>);
                             }
                         }   
                     ?>
