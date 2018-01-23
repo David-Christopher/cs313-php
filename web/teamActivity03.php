@@ -36,7 +36,7 @@
                         <input type="checkbox" name="countriesVisited[]" value="AF"/>Africa<br>
                         <input type="checkbox" name="countriesVisited[]" value="AN" />Antarctica<br><br>
 
-                        <input type="submit">
+                        <input type="submit" value="Submit">
 
                     </form>
                 </main>
