@@ -1,5 +1,5 @@
 <?php
-$array = [
+$allBoxes = [
     "NA" => "North America",
     "SA" => "South America",
     "EU" => "Europe",
@@ -7,11 +7,9 @@ $array = [
     "AU" => "Australia",
     "AF" => "Africa",
     "AN" => "Antarctica",
-    "CS" => "Computer Science",
-    "WDD" => "Web Design and Development",    
-    "CIT" => "Computer Information Technology", 
-    "CE" => "Computer Engineering",
 ];
+
+$_POST["major"] = "CS" => "Computer Science";
 ?>
 <!DOCTYPE html>
 <html lang="en">
