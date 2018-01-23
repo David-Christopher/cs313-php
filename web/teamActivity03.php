@@ -1,3 +1,18 @@
+<?php
+$array = [
+    "NA" => "North America",
+    "SA" => "South America",
+    "EU" => "Europe",
+    "AS" => "Asia",
+    "AU" => "Australia",
+    "AF" => "Africa",
+    "AN" => "Antarctica",
+    "CS" => "Computer Science",
+    "WDD" => "Web Design and Development",    
+    "CIT" => "Computer Information Technology", 
+    "CE" => "Computer Engineering",
+];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +38,7 @@
                         <input type="radio" name="major" value="CS"> Computer Science<br>
                         <input type="radio" name="major" value="WDD"> Web Design and Development<br>
                         <input type="radio" name="major" value="CIT"> Computer Information Technology<br>
-                        <input type="radio" name="major" value="CIT"> Computer Engineering<br><br>
+                        <input type="radio" name="major" value="CE"> Computer Engineering<br><br>
                         <label>Comments: </label>
                         <input type="textarea" name="comments"><br><br>
                         

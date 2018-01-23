@@ -1,3 +1,18 @@
+<?php
+$array = [
+    "NA" => "North America",
+    "SA" => "South America",
+    "EU" => "Europe",
+    "AS" => "Asia",
+    "AU" => "Australia",
+    "AF" => "Africa",
+    "AN" => "Antarctica",
+    "CS" => "Computer Science",
+    "WDD" => "Web Design and Development",    
+    "CIT" => "Computer Information Technology", 
+    "CE" => "Computer Engineering",
+];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
