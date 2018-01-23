@@ -25,7 +25,7 @@ $allBoxes = [
                     <h1>Here Are Your Submitted Details</h1> 
                     <p>Name: </p><?php echo $_POST["name"]; ?>
                     <p>Email: </p><a href="mailto:<? $_POST["email"] ?>"><?php echo $_POST["email"]; ?></a>
-                    <p>Major: </p><?php echo $_POST["major"]; ?>
+                    <p>Major: </p><?php echo $_POST["major &lt;br>"]; ?>
                     <!--Checkbox checker-->
                     <?php $allBoxes = $_POST['countriesVisited'];
                         if(empty($allBoxes))
