@@ -28,7 +28,7 @@
                             echo("You selected $total countries: ");
                             for($i=0; $i < $total; $i++)
                             {
-                                echo($allBoxes[$i] . " ");
+                                echo($allBoxes[$i] . ", ");
                             }
                         }   
                     ?>
