@@ -8,8 +8,6 @@ $allBoxes = [
     "AF" => "Africa",
     "AN" => "Antarctica",
 ];
-
-$_POST["major"] = "CS" => "Computer Science";
 ?>
 <!DOCTYPE html>
 <html lang="en">
