@@ -11,11 +11,11 @@
         <div class="wrapper"><!--background image applied here-->
             <div class="page-content-container"><!--content container applied here-->
                 <main>
-                    <h1>Here are your submitted details:</h1><br> 
-                    <p>Name: </p><?php echo $_POST["name"]; ?><br>
-                    <p>Email: </p><?php echo $_POST["email"]; ?><br>
-                    <p>Major: </p><?php echo $_POST["major"]; ?><br>
-                    <p>Comments: </p><?php echo $_POST["comments"]; ?><br>
+                    <h1>Here Are Your Submitted Details</h1> 
+                    <p>Name: </p><?php echo $_POST["name"]; ?>
+                    <p>Email: </p><?php echo $_POST["email"]; ?>
+                    <p>Major: </p><?php echo $_POST["major"]; ?>
+                    <p>Comments: </p><?php echo $_POST["comments"]; ?>
                     <!--Checkbox checker-->
                     <?php $allBoxes = $_POST['countriesVisited'];
                         if(empty($allBoxes))
