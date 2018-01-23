@@ -13,9 +13,8 @@
                 <main>
                     <h1>Here Are Your Submitted Details</h1> 
                     <p>Name: </p><?php echo $_POST["name"]; ?>
-                    <p>Email: </p><?php echo $_POST["email"]; ?>
+                    <p>Email: </p><a href="mailto:<? $_POST["email"] ?>"><?php echo $_POST["email"]; ?></a>
                     <p>Major: </p><?php echo $_POST["major"]; ?>
-                    <p>Comments: </p><?php echo $_POST["comments"]; ?>
                     <!--Checkbox checker-->
                     <?php $allBoxes = $_POST['countriesVisited'];
                         if(empty($allBoxes))
@@ -32,6 +31,7 @@
                             }
                         }   
                     ?>
+                    <p>Comments: </p><?php echo $_POST["comments"]; ?>
 
                 </main>
                 <footer>
