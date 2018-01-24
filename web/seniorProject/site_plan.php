@@ -98,7 +98,7 @@
                     <div>
                         <p>Home</p>
                         <ul>
-                            <li>Main banner with product display and season based message</li>
+                            <li>Main banner with product display and season-based message</li>
                             <li>Style variations category display</li>
                             <li>Top trending products display</li>
                         </ul>
@@ -106,14 +106,14 @@
                         <ul>
                             <li>Product image(s)</li>
                             <li>Product description</li>
-                            <li>Quanity text box</li>
+                            <li>Quantity text box</li>
                             <li>Add to cart button</li>
                         </ul>
                         <p>Cart</p>
                         <ul>
                             <li>Product image(s)</li>
                             <li>Small description</li>
-                            <li>Quanity text box</li>
+                            <li>Quantity text box</li>
                             <li>Remove or update quantity option</li>
                             <li>Product totals displayed</li>
                             <li>Subtotal displayed</li>
@@ -143,8 +143,8 @@
                         </ul>
                         <p>Checkout</p>
                         <ul>
-                            <li>Probably a third party chekcout like 1shoppingcart.com</li>
-                            <li>This page will be apart of the launching stage after project completion</li>
+                            <li>Probably a third party checkout like 1shoppingcart.com</li>
+                            <li>This page will be a part of the launching stage after project completion</li>
                         </ul>
                     </div>
                     <h2 id="map">Site Map</h2>
