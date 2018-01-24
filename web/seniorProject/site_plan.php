@@ -178,7 +178,7 @@
                         <h3>>Sign-In</h3>
                         <img src="images/singinWireframe.png" alt="Wireframes">
                         <h3>>Register</h3>
-                        <img src="images/registerWireframe.png" alt="Wireframes">                       
+                        <img src="images/registerWireFrame.png" alt="Wireframes">                       
                     </div>
                     <h2 id="sktch">Responsive Sketch</h2>
                     <div>
