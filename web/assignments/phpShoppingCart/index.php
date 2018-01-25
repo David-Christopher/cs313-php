@@ -26,16 +26,9 @@
 						  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
 						</nav>
 	               	</div>
-                	<img id="logo" src="../../../images/CDlogo.png" alt="David Design Logo">
                 </header>
                 <main>
                 	<img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
-                	<div class="personalInfo">
-	                	<img class="not_mobile" src="../../../images/dash.png" alt="Custom Dash Word Art">
-	                    <h1 class="shoppingCart">Web Design & Development</h1>
-	                    <img class="not_mobile" src="../../../images/dash.png" alt="Custom Dash Word Art">
-	                    <h2 class="shoppingCart">Christopher David</h2>
-                	</div>
                 </main>
                 <footer>
                 	<div>
