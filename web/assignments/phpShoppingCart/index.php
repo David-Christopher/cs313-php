@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher David | Web Design & Development</title>
+    <title>PHP Shopping Cart</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -29,12 +29,12 @@
                 	<img id="logo" src="../../../images/CDlogo.png" alt="David Design Logo">
                 </header>
                 <main>
-                	<img id="main_img" src="../../../images/lake-tahoe.jpg" alt="Free Pixabay Lake Tahoe Picture">
+                	<img id="main_img" src="../../../grocery-store.jpg" alt="Free Pixabay Lake Tahoe Picture">
                 	<div class="personalInfo">
 	                	<img class="not_mobile" src="../../../images/dash.png" alt="Custom Dash Word Art">
-	                    <h1>Web Design & Development</h1>
+	                    <h1 class="shoppingCart">Web Design & Development</h1>
 	                    <img class="not_mobile" src="../../../images/dash.png" alt="Custom Dash Word Art">
-	                    <h2>Christopher David</h2>
+	                    <h2 class="shoppingCart">Christopher David</h2>
                 	</div>
                 </main>
                 <footer>

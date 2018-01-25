@@ -113,6 +113,14 @@ footer img{
     margin-top: 0px;
 }
 
+/*////////////////////////////*/
+   /*PHP SHOPPING CART PAGE*/
+/*////////////////////////////*/
+
+.shoppingCart{
+	color: #333;
+}
+
 @media all and (min-width: 400px) {
 
 /*////////////////////////////*/
