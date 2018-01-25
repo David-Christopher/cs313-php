@@ -23,8 +23,11 @@
                 </header>
                 <main>
                 	<img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
+                    <div class="products-store">
+                        
+                    </div>
                 </main>
-                <footer>
+                <footer class="shopping-cart">
                 	<div>
                 		<div id="left">
                 			<h3>About</h3>
