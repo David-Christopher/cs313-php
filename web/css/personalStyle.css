@@ -149,6 +149,8 @@ table{
 
 .products-store h2{
 	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40;
 }
 
 @media all and (min-width: 400px) {
