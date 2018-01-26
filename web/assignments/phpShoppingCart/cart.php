@@ -2,7 +2,7 @@
 
 //Declare product variable and cost
 $inventory = array("Banana", "Kiwi", "Apple", "Bread");
-$cost = array("1.00", "5.00", "2.00", "1.99");
+$cost = array("1.25", "5.75", "2.50", "1.99");
 
 //Load session
  if ( !isset($_SESSION["total"]) ) {
