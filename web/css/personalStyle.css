@@ -219,6 +219,7 @@ form.shoppingForm{
 
 .shipping-info{
 	width: 100px;
+	margin: auto;
 	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
