@@ -1,4 +1,60 @@
-<!DOCTYPE html>
+<?php session_start();
+
+//Declare product variable and cost
+$inventory = array("Banana", "Kiwi", "Apple", "Bread");
+$cost = array("1.00", "5.00", "2.00", "1.99");
+
+//Load session
+ if ( !isset($_SESSION["total"]) ) {
+   $_SESSION["total"] = 0;
+   for ($i=0; $i< count($inventory); $i++) {
+    $_SESSION["quantity"][$i] = 0;
+   $_SESSION["cost"][$i] = 0;
+  }
+ }
+
+//refresh
+ if ( isset($_GET['refresh']) )
+ {
+ if ($_GET["refresh"] == 'true')
+   {
+   unset($_SESSION["quantity"]);
+   unset($_SESSION["cost"]);
+   unset($_SESSION["total"]);
+   unset($_SESSION["cart"]);
+   }
+ }
+
+//add to cart
+ if ( isset($_GET["add to cart"]) )
+   {
+   $i = $_GET["add to cart"];
+   $quantity = $_SESSION["quantity"][$i] + 1;
+   $_SESSION["cost"][$i] = $cost[$i] * $quantity;
+   $_SESSION["cart"][$i] = $i;
+   $_SESSION["quantity"][$i] = $quantity;
+ }
+
+//remove
+  if ( isset($_GET["remove"]) )
+   {
+   $i = $_GET["remove"];
+   $quantity = $_SESSION["quantity"][$i];
+   $quantity--;
+   $_SESSION["quantity"][$i] = $quantity;
+
+//if quantity is zero, remove product from cart
+   if ($quantity == 0) {
+    $_SESSION["cost"][$i] = 0;
+    unset($_SESSION["cart"][$i]);
+  }
+ else
+  {
+   $_SESSION["cost"][$i] = $cost[$i] * $quantity;
+  }
+ }
+ ?>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -24,8 +80,87 @@
                 <main>
                 	<img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
                     <div class="products-store">
-                        
+                        <div>
+                           <form method="post" action="">
+                                <div>
+                                    <a href="banana.php"><h2>Banana</h2></a>
+                                    <input type="" name="">
+                                    <input type="" name="">
+                                </div>
+                                <div>
+                                    <a href="kiwi.php"><h2>Kiwi</h2></a>
+                                    <input type="" name="">
+                                    <input type="submit" value="Submit">     
+                                </div>
+                                <div>
+                                    <a href="apple.php"><h2>Apple</h2></a>
+                                    <input type="" name="">
+                                    <input type="submit" value="Submit">     
+                                </div>
+                                <div>
+                                    <a href="bread.php"><h2>Bread</h2></a>
+                                    <input type="" name="">
+                                    <input type="submit" value="Submit">    
+                                </div>
+                            </form>
+                        </div>
                     </div>
+                    <h2>List of All Products</h2>
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th width="10px">&nbsp;</th>
+                            <th>Amount</th>
+                            <th width="10px">&nbsp;</th>
+                            <th>Action</th>
+                        </tr>
+                        <?php for ($i=0; $i< count($inventory); $i++) { ?>
+                        <tr>
+                            <td><?php echo($inventory[$i]); ?></td>
+                            <td width="10px">&nbsp;</td>
+                            <td><?php echo($cost[$i]); ?></td>
+                            <td width="10px">&nbsp;</td>
+                            <td><a href="?add to cart=<?php echo($i); ?>">add to cart to cart</a></td>
+                        </tr>
+                        <?php }?>
+                        <tr>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"><a href="?refresh=true">refresh Cart</a></td>
+                        </tr>
+                    </table>
+
+                    <?php if ( isset($_SESSION["cart"]) ) { ?><br/><br/><br/>
+                    <h2>Cart</h2>
+                    <table>
+                        <tr>
+                            <th>Product</th>
+                            <th width="10px">&nbsp;</th>
+                            <th>quantity</th>
+                            <th width="10px">&nbsp;</th>
+                            <th>Amount</th>
+                            <th width="10px">&nbsp;</th>
+                            <th>Action</th>
+                        </tr>
+                    <?php $total = 0;
+                    foreach ( $_SESSION["cart"] as $i ) { ?>
+                        <tr>
+                            <td><?php echo( $inventory[$_SESSION["cart"][$i]] ); ?></td>
+                            <td width="10px">&nbsp;</td>
+                            <td><?php echo( $_SESSION["quantity"][$i] ); ?></td>
+                            <td width="10px">&nbsp;</td>
+                            <td><?php echo( $_SESSION["cost"][$i] ); ?></td>
+                            <td width="10px">&nbsp;</td>
+                            <td><a href="?remove=<?php echo($i); ?>">remove from cart</a></td>
+                        </tr>
+                    <?php $total = $total + $_SESSION["cost"][$i]; }
+                    $_SESSION["total"] = $total;?>
+                        <tr>
+                            <td colspan="7">Total : <?php echo($total); ?></td>
+                        </tr>
+                    </table>
+                    <?php }?>
                 </main>
                 <footer class="shopping-cart">
                 	<div>
