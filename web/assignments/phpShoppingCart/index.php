@@ -83,17 +83,17 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
                         <table>
                             <tr>
                                 <th>Product</th>
-                                <th width="10px">&nbsp;</th>
+                                <th class="table_space">&nbsp;</th>
                                 <th>Amount</th>
-                                <th width="10px">&nbsp;</th>
+                                <th class="table_space">&nbsp;</th>
                                 <th>Action</th>
                             </tr>
                             <?php for ($i=0; $i< count($inventory); $i++) { ?>
                             <tr>
                                 <td><?php echo($inventory[$i]); ?></td>
-                                <td width="10px">&nbsp;</td>
+                                <td class="table_space">&nbsp;</td>
                                 <td><?php echo($cost[$i]); ?></td>
-                                <td width="10px">&nbsp;</td>
+                                <td class="table_space">&nbsp;</td>
                                 <td><a href="?add to cart=<?php echo($i); ?>">add to cart to cart</a></td>
                             </tr>
                             <?php }?>
@@ -110,22 +110,22 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
                         <table>
                             <tr>
                                 <th>Product</th>
-                                <th width="10px">&nbsp;</th>
+                                <th class="table_space">&nbsp;</th>
                                 <th>quantity</th>
-                                <th width="10px">&nbsp;</th>
+                                <th class="table_space">&nbsp;</th>
                                 <th>Amount</th>
-                                <th width="10px">&nbsp;</th>
+                                <th class="table_space">&nbsp;</th>
                                 <th>Action</th>
                             </tr>
                         <?php $total = 0;
                         foreach ( $_SESSION["cart"] as $i ) { ?>
                             <tr>
                                 <td><?php echo( $inventory[$_SESSION["cart"][$i]] ); ?></td>
-                                <td width="10px">&nbsp;</td>
+                                <td class="table_space">&nbsp;</td>
                                 <td><?php echo( $_SESSION["quantity"][$i] ); ?></td>
-                                <td width="10px">&nbsp;</td>
+                                <td class="table_space">&nbsp;</td>
                                 <td><?php echo( $_SESSION["cost"][$i] ); ?></td>
-                                <td width="10px">&nbsp;</td>
+                                <td class="table_space">&nbsp;</td>
                                 <td><a href="?remove=<?php echo($i); ?>">remove from cart</a></td>
                             </tr>
                         <?php $total = $total + $_SESSION["cost"][$i]; }
