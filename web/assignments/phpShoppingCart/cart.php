@@ -76,7 +76,6 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
                           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
                         </nav>
 	               	</div>
-                	<img id="logo" src="../../../images/CDlogo.png" alt="David Design Logo">
                 </header>
                 <main>
                     <img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
