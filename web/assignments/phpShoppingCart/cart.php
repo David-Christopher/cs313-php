@@ -121,7 +121,6 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
                         <div id="center">
                             <p>This page is designed to simulate a php shopping cart</p>
                         </div>
-                        </div>
                     </div>
                 </footer>
             </div><!--end of content container tag-->

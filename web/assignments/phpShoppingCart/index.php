@@ -86,7 +86,7 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
                                 <th class="table_space">&nbsp;</th>
                                 <th>Amount</th>
                                 <th class="table_space">&nbsp;</th>
-                                <th>Action</th>
+                                <th class="table_space">&nbsp;</th>
                             </tr>
                             <?php for ($i=0; $i< count($inventory); $i++) { ?>
                             <tr>
