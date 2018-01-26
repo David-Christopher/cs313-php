@@ -109,6 +109,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                                 <td colspan="7">Total : <?php echo($total); ?></td>
                             </tr>
                         </table>
+                        <a href=""><div class="checkout">Checkout & Purchase</div></a>
                     <?php }?>
                     </div>
                 </main>
