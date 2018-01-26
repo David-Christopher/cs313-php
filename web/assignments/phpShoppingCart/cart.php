@@ -71,7 +71,7 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
                 <header>
                 	<div class="nav-background">
                         <nav class="topnav" id="myTopnav">
-                          <a href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a>
+                          <a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart">Store</a>
                           <a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/cart.php" class="active">Cart</a>
                           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
                         </nav>
