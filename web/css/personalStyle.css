@@ -47,6 +47,10 @@ h1, h2, h3, h4, p, a{
   display: none;
 }
 
+table{
+	font-family: 'Open Sans', sans-serif;
+}
+
 nav a{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 30px;
@@ -79,10 +83,14 @@ nav a{
     text-align: center;
 }
 
-.personalInfo h1{
+.personalInfo h1, table th{
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
 	font-size: 20px;
+}
+
+table th{
+	font-style: none;
 }
 
 footer{
