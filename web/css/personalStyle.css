@@ -213,6 +213,10 @@ input[type="text"].state{
 	margin-left: 60px;
 }
 
+form.shoppingForm{
+	width: 340px;
+}
+
 .shipping-info{
 	width: 100px;
 	color: #ffffff;
