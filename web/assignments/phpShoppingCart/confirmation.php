@@ -81,7 +81,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                     <img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
                     <div class="products-store cart">
                     <?php if ( isset($_SESSION["cart"]) ) { ?><br/><br/><br/>
-                        <h2>Cart</h2>
+                        <h2>Confirmation of Purchase</h2>
                         <table>
                             <tr>
                                 <th>Product</th>
@@ -101,7 +101,6 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                                 <td class="table_space">&nbsp;</td>
                                 <td><?php echo( $_SESSION["cost"][$i] ); ?></td>
                                 <td class="table_space">&nbsp;</td>
-                                <td><a href="?remove=<?php echo($i); ?>">remove from cart</a></td>
                             </tr>
                         <?php $total = $total + $_SESSION["cost"][$i]; }
                         $_SESSION["total"] = $total;?>
@@ -110,8 +109,11 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                             </tr>
                         </table>
                     <?php }?>
-                    <a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php" class="checkout"><div>Checkout</div></a>
-                    </div>
+                    <p>Name: </p><?php echo $_POST["name"]; ?>
+                    <p>Address 1: </p><?php echo $_POST["address1"]; ?>
+                    <p>Address 2: </p><?php echo $_POST["address2"]; ?>
+                    <p>State: </p><?php echo $_POST["state"]; ?>
+                    <p>Zip Code: </p><?php echo $_POST["zip"]; ?>
                 </main>
                 <footer class="shopping-cart">
                     <div>
