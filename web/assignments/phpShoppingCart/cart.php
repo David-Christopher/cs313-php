@@ -25,10 +25,10 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
    }
  }
 
-//add to cart
- if ( isset($_GET["add to cart"]) )
+//add
+ if ( isset($_GET["add"]) )
    {
-   $i = $_GET["add to cart"];
+   $i = $_GET["add"];
    $quantity = $_SESSION["quantity"][$i] + 1;
    $_SESSION["cost"][$i] = $cost[$i] * $quantity;
    $_SESSION["cart"][$i] = $i;
