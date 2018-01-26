@@ -161,7 +161,7 @@ a.checkout{
 	text-decoration: none;
 }
 
-.checkout div{
+.checkout div, input.checkout{
     text-align: center;
     width: 150px;
     padding: 25px;
@@ -171,8 +171,12 @@ a.checkout{
     font-family: 'Open Sans', sans-serif;
 }
 
-.checkout div:hover{
+.checkout div:hover, input.checkout:hover{
 	background: #f39f4c;
+}
+
+.shoppingForm{
+	margin: auto;
 }
 
 @media all and (min-width: 400px) {

@@ -81,17 +81,8 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                     <img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
                     <div class="products-store">
                     <?php if ( isset($_SESSION["cart"]) ) { ?><br/><br/><br/>
-                        <h2>Cart</h2>
+                        <h2>Checkout Screen</h2>
                         <table>
-                            <tr>
-                                <th>Product</th>
-                                <th class="table_space">&nbsp;</th>
-                                <th>quantity</th>
-                                <th class="table_space">&nbsp;</th>
-                                <th>Amount</th>
-                                <th class="table_space">&nbsp;</th>
-                                <th>&nbsp;</th>
-                            </tr>
                         <?php $total = 0;
                         foreach ( $_SESSION["cart"] as $i ) { ?>
                             <tr>
@@ -101,7 +92,6 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                                 <td class="table_space">&nbsp;</td>
                                 <td><?php echo( $_SESSION["cost"][$i] ); ?></td>
                                 <td class="table_space">&nbsp;</td>
-                                <td><a href="?remove=<?php echo($i); ?>">remove from cart</a></td>
                             </tr>
                         <?php $total = $total + $_SESSION["cost"][$i]; }
                         $_SESSION["total"] = $total;?>
@@ -110,8 +100,8 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                             </tr>
                         </table>
                     <?php }?>
-                    <form action="confirmation.php" method="post">
-                        
+                    <form class="shoppingForm" action="confirmation.php" method="post">
+                        <h2>Enter Shipping Information</h2>
                         <label>Name: </label>
                         <input type="text" name="name"><br><br>
                         
