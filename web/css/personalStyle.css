@@ -217,12 +217,16 @@ input[type="text"].state{
 	margin-left: 60px;
 }
 
+input[type="text"].city {
+    margin-left: 65px;
+}
+
 form.shoppingForm{
 	width: 340px;
 }
 
 .shipping-info{
-	width: 100px;
+	width: 140px;
 	margin: auto;
 	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
