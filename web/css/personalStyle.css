@@ -122,9 +122,6 @@ footer img{
     margin-top: 0px;
 }
 
-.table_space{
-	width: 15px;
-}
 
 /*////////////////////////////*/
    /*PHP SHOPPING CART PAGE*/
@@ -144,6 +141,14 @@ table{
 	margin: auto;
 	padding: 40px;
 	font-size: 35px;
+}
+
+.table_space{
+	width: 15px;
+}
+
+.products-store h2{
+	text-align: center;
 }
 
 @media all and (min-width: 400px) {
