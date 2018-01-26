@@ -70,7 +70,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
             <div class="page-content-container"><!--content container applied here-->
                 <header>
                 	<div class="nav-background">
-	                	<nav class="topnav shoppingNav" id="myTopnav">
+	                	<nav class="topnav" id="myTopnav">
 						  <a href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a>
                           <a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/cart.php" class="active">Cart</a>
 						  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
