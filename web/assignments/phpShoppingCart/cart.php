@@ -79,7 +79,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                 </header>
                 <main>
                     <img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
-                    <div class="products-store">
+                    <div class="products-store cart">
                     <?php if ( isset($_SESSION["cart"]) ) { ?><br/><br/><br/>
                         <h2>Cart</h2>
                         <table>

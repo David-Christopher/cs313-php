@@ -131,6 +131,10 @@ footer img{
 	background-color: rgba(246, 1, 1, .7);
 }
 
+.products-store.cart{
+	padding-bottom: 80px;
+}
+
 .shopping-cart{
 	padding: 0px;
     padding-bottom: 10px;
@@ -161,8 +165,15 @@ a.checkout{
     text-align: center;
     width: 150px;
     padding: 25px;
-    font-size: 17px;
-    background: darkorange;
+    font-size: 30px;
+    background: #EE7600;
+    margin: auto;
+    color: #E50000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.checkout div:hover{
+	background: #f39f4c;
 }
 
 @media all and (min-width: 400px) {
