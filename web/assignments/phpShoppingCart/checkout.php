@@ -79,10 +79,19 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                 </header>
                 <main>
                     <img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
-                    <div class="products-store">
+                    <div class="products-store checkout-screen">
                     <?php if ( isset($_SESSION["cart"]) ) { ?><br/><br/><br/>
                         <h2>Checkout Screen</h2>
                         <table>
+                            <tr>
+                                <th>Product</th>
+                                <th class="table_space">&nbsp;</th>
+                                <th>quantity</th>
+                                <th class="table_space">&nbsp;</th>
+                                <th>Amount</th>
+                                <th class="table_space">&nbsp;</th>
+                                <th>&nbsp;</th>
+                            </tr>
                         <?php $total = 0;
                         foreach ( $_SESSION["cart"] as $i ) { ?>
                             <tr>

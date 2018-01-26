@@ -109,11 +109,13 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                             </tr>
                         </table>
                     <?php }?>
-                    <p>Name: </p><?php echo $_POST["name"]; ?>
-                    <p>Address 1: </p><?php echo $_POST["address1"]; ?>
-                    <p>Address 2: </p><?php echo $_POST["address2"]; ?>
-                    <p>State: </p><?php echo $_POST["state"]; ?>
-                    <p>Zip Code: </p><?php echo $_POST["zip"]; ?>
+                    <div class="shipping-info">
+                        <?php echo $_POST["name"]; ?>
+                        <?php echo $_POST["address1"]; ?>
+                        <?php echo $_POST["address2"]; ?>
+                        <?php echo $_POST["state"]; ?>
+                        <?php echo $_POST["zip"]; ?>
+                    </div>
                 </main>
                 <footer class="shopping-cart">
                     <div>
