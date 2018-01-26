@@ -108,9 +108,9 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                             <tr>
                                 <td colspan="7">Total : <?php echo($total); ?></td>
                             </tr>
-                            <a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php" class="checkout"><div>Checkout</div></a>
                         </table>
                     <?php }?>
+                    <a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php" class="checkout"><div>Checkout</div></a>
                     </div>
                 </main>
                 <footer class="shopping-cart">
