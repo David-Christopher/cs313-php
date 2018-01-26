@@ -120,6 +120,9 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                         <label>Address 2: </label>
                         <input type="text" name="address2"><br><br>
 
+                        <label>City: </label>
+                        <input class="city" type="text" name="city"><br><br>
+
                         <label>State: </label>
                         <input class="state" type="text" name="state"><br><br>
 

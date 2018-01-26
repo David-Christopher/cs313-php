@@ -111,9 +111,10 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                     <?php }?>
                     <div class="shipping-info">
                         <?php echo $_POST["name"]; ?><br>
-                        <?php echo $_POST["address1"]; ?><br>
+                        <?php echo $_POST["address1"]; ?>
                         <?php echo $_POST["address2"]; ?><br>
-                        <?php echo $_POST["state"]; ?><br>
+                        <?php echo $_POST["city"]; ?><?php echo ", "?>
+                        <?php echo $_POST["state"]; ?><?php echo ", "?>
                         <?php echo $_POST["zip"]; ?><br>
                     </div>
                 </main>
