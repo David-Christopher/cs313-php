@@ -209,7 +209,7 @@ input[type="text"]:last-child{
 	    margin-left: 33px;
 }
 
-.state{
+input[type="text"].state{
 	margin-left: 60px;
 }
 
