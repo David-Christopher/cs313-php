@@ -189,6 +189,10 @@ input.checkout{
 	padding-bottom: 80px;
 }
 
+label{
+	color: #ffffff;
+}
+
 input[type="text"]:first-child{
 	margin-left: 55px;
 }
