@@ -153,6 +153,18 @@ table{
 	font-size: 40;
 }
 
+a.checkout{
+	text-decoration: none;
+}
+
+.checkout div{
+    text-align: center;
+    width: 150px;
+    padding: 25px;
+    font-size: 17px;
+    background: darkorange;
+}
+
 @media all and (min-width: 400px) {
 
 /*////////////////////////////*/
