@@ -91,7 +91,7 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
                                 <th class="table_space">&nbsp;</th>
                                 <th>Amount</th>
                                 <th class="table_space">&nbsp;</th>
-                                <th class="table_space">&nbsp;</th>
+                                <th>&nbsp;</th>
                             </tr>
                         <?php $total = 0;
                         foreach ( $_SESSION["cart"] as $i ) { ?>
