@@ -121,7 +121,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                         <input type="text" name="address2"><br><br>
 
                         <label>State: </label>
-                        <input type="text" name="state"><br><br>
+                        <input class="state" type="text" name="state"><br><br>
 
                         <label>Zip Code: </label>
                         <input type="text" name="zip"><br><br>

@@ -202,11 +202,15 @@ input[type="text"]:nth-child(4){
 }
 
 input[type="text"]:nth-child(3){
-	margin-left: 29px;
+	margin-left: 55px;
 }
 
 input[type="text"]:last-child{
 	    margin-left: 33px;
+}
+
+.state{
+	margin-left: 60px;
 }
 
 .shipping-info{
