@@ -83,6 +83,15 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                     <?php if ( isset($_SESSION["cart"]) ) { ?><br/><br/><br/>
                         <h2>Cart</h2>
                         <table>
+                            <tr>
+                                <th>Product</th>
+                                <th class="table_space">&nbsp;</th>
+                                <th>quantity</th>
+                                <th class="table_space">&nbsp;</th>
+                                <th>Amount</th>
+                                <th class="table_space">&nbsp;</th>
+                                <th>&nbsp;</th>
+                            </tr>
                         <?php $total = 0;
                         foreach ( $_SESSION["cart"] as $i ) { ?>
                             <tr>
@@ -91,6 +100,13 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                                 <td><?php echo( $_SESSION["quantity"][$i] ); ?></td>
                                 <td class="table_space">&nbsp;</td>
                                 <td><?php echo( $_SESSION["cost"][$i] ); ?></td>
+                                <td class="table_space">&nbsp;</td>
+                                <td><a href="?remove=<?php echo($i); ?>">remove from cart</a></td>
+                            </tr>
+                        <?php $total = $total + $_SESSION["cost"][$i]; }
+                        $_SESSION["total"] = $total;?>
+                            <tr>
+                                <td colspan="7">Total : <?php echo($total); ?></td>
                             </tr>
                         </table>
                     <?php }?>
