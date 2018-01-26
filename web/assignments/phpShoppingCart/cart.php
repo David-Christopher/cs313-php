@@ -59,62 +59,70 @@ $cost = array("1.00", "5.00", "2.00", "1.99");
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Shopping Cart</title>
+    <title>PHP Shopping Cart: Cart</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="../../../css/personalStyle.css" type="text/css" rel="stylesheet"/>
-	<script src="js/personalScripts.js"></script>
-	<link rel="icon" type="image" href="../../../images/favicon.png">
+	<script src="../../../js/personalScripts.js"></script>
+	<link rel="icon" type="image/png" href="../../../images/favicon.png">
 </head>
     <body>
         <div class="wrapper"><!--background image applied here-->
             <div class="page-content-container"><!--content container applied here-->
                 <header>
                 	<div class="nav-background">
-	                	<nav class="topnav" id="myTopnav">
-						  <a href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a>
+                        <nav class="topnav" id="myTopnav">
+                          <a href="https://vast-savannah-73411.herokuapp.com/assignments.php">Assignments</a>
                           <a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/cart.php" class="active">Cart</a>
-						  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
-						</nav>
+                          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="topNavFunction()">&#9776;</a>
+                        </nav>
 	               	</div>
+                	<img id="logo" src="../../../images/CDlogo.png" alt="David Design Logo">
                 </header>
                 <main>
-                	<img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
+                    <img id="main_img" src="../../../images/grocery-store.jpg" alt="Image from iamwire.com">
                     <div class="products-store">
+                    <?php if ( isset($_SESSION["cart"]) ) { ?><br/><br/><br/>
+                        <h2>Cart</h2>
                         <table>
                             <tr>
                                 <th>Product</th>
                                 <th class="table_space">&nbsp;</th>
+                                <th>quantity</th>
+                                <th class="table_space">&nbsp;</th>
                                 <th>Amount</th>
                                 <th class="table_space">&nbsp;</th>
-                                <th>Action</th>
+                                <th class="table_space">&nbsp;</th>
                             </tr>
-                            <?php for ($i=0; $i< count($inventory); $i++) { ?>
+                        <?php $total = 0;
+                        foreach ( $_SESSION["cart"] as $i ) { ?>
                             <tr>
-                                <td><?php echo($inventory[$i]); ?></td>
+                                <td><?php echo( $inventory[$_SESSION["cart"][$i]] ); ?></td>
                                 <td class="table_space">&nbsp;</td>
-                                <td><?php echo($cost[$i]); ?></td>
+                                <td><?php echo( $_SESSION["quantity"][$i] ); ?></td>
                                 <td class="table_space">&nbsp;</td>
-                                <td><a href="?add to cart=<?php echo($i); ?>">add to cart to cart</a></td>
+                                <td><?php echo( $_SESSION["cost"][$i] ); ?></td>
+                                <td class="table_space">&nbsp;</td>
+                                <td><a href="?remove=<?php echo($i); ?>">remove from cart</a></td>
                             </tr>
-                            <?php }?>
+                        <?php $total = $total + $_SESSION["cost"][$i]; }
+                        $_SESSION["total"] = $total;?>
                             <tr>
-                                <td colspan="5"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="5"><a href="?refresh=true">refresh Cart</a></td>
+                                <td colspan="7">Total : <?php echo($total); ?></td>
                             </tr>
                         </table>
+                    <?php }?>
                     </div>
                 </main>
                 <footer class="shopping-cart">
-                	<div>
-                		<div id="left">
-                			<h3>About</h3>
-                		</div>
-                		<div id="center">
-                			<p>This page is designed to simulate a php shopping cart</p>
-                		</div>
-                	</div>
+                    <div>
+                        <div id="left">
+                            <h3>About</h3>
+                        </div>
+                        <div id="center">
+                            <p>This page is designed to simulate a php shopping cart</p>
+                        </div>
+                        </div>
+                    </div>
                 </footer>
             </div><!--end of content container tag-->
         </div>
