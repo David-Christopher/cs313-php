@@ -143,7 +143,6 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                           }
 
                           echo $_POST['address1'];
-                          echo "<br/>";
 
 
                           if (isset($errors2)) {
@@ -166,7 +165,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                           }
 
                           echo $_POST['city'];
-                          echo "<br/>";
+                          echo ", ";
 
 
                           if (isset($errors3)) {
@@ -184,7 +183,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                           }
 
                           echo $_POST['state'];
-                          echo "<br/>";
+                          echo ", ";
 
 
                           if (isset($errors4)) {
