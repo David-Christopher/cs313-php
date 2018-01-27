@@ -117,23 +117,22 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                               $_POST['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
                               if ($_POST['name'] == "") {
                                   $errors1 .= 'Please enter a valid name.<br/>';
+                                  include 'https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php';
                               }
                           } else {
                               $errors1 .= 'Please enter your name.<br/>';
+                              include 'https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php';
                           }
 
                           echo $_POST['name'];
                           echo "<br/>";
 
-                          if (isset($errors1)) {
-                            echo $errors1;
-                            echo "<br/>";
-                          }
                           
                           if ($_POST['address1'] != "") {
                               $_POST['address1'] = filter_var($_POST['address1'], FILTER_SANITIZE_STRING);
                               if ($_POST['address1'] == "") {
                                   $errors2 .= 'Please enter a valid address.<br/>';
+                                  include 
                               }
                           } else {
                               $errors2 .= 'Please enter your address.<br/>';
