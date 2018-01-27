@@ -167,6 +167,14 @@ a.addCart{
     padding: 0 10px;
 }
 
+a.addCart:hover{
+	background: #f39f4c;
+}
+
+.clearCart:hover{
+	color: #32CD32;
+}
+
 .checkout div, input.checkout{
     text-align: center;
     width: 150px;

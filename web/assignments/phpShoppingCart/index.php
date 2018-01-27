@@ -101,7 +101,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                                 <td colspan="5"></td>
                             </tr>
                             <tr>
-                                <td colspan="5"><a href="?refresh=true">Remove All Items From Cart</a></td>
+                                <td class="clearCart" colspan="5"><a href="?refresh=true">Remove All Items From Cart</a></td>
                             </tr>
                         </table>
                     </div>
