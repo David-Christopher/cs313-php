@@ -113,6 +113,15 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                     <div class="shipping-info">
                         <?php 
 
+                          if ($_POST['name'] != "") {
+                              $_POST['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+                              if ($_POST['name'] == "") {
+                                  $errors1 .= 'Please enter a valid name.<br/>';
+                              }
+                          } else {
+                              $errors1 .= 'Please enter your name.<br/>';
+                          }
+
                           echo $_POST['name'];
                           echo "<br/>";
 
