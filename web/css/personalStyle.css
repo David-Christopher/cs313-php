@@ -131,6 +131,10 @@ footer.assignmentsFooter a:hover{
 	color: #4CAF50;
 }
 
+footer.assignmentsFooter a{
+	padding-left: 14px;
+}
+
 
 /*////////////////////////////*/
    /*PHP SHOPPING CART PAGE*/
