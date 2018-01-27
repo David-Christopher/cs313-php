@@ -31,17 +31,13 @@
                 <main>
                     <img id="main_img" src="images/lake-tahoe.jpg" alt="Free Pixabay Lake Tahoe Picture">
                 </main>
-                <footer>
+                <footer class="assignmentsFooter">
                     <div>
                         <div id="left">
                             <h3>Assignments</h3>
                         </div>
                         <div id="center">
                             <a href="http://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/">PHP Shopping Cart</a>
-                        </div>
-                        <div id="right">
-                            <a href="/images/Resume1-19-18.pdf" download><img src="images/print.png" alt="Custom Print Resume Icon"></a>
-                            <a href="/images/Resume1-19-18.pdf" download><p>Print Resume</p></a>
                         </div>
                     </div>
                 </footer>

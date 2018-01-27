@@ -122,6 +122,15 @@ footer img{
     margin-top: 0px;
 }
 
+footer.assignmentsFooter{
+	margin-top: 0px;
+}
+
+footer.assignmentsFooter a:hover{
+	text-decoration: none;
+	color: #4CAF50;
+}
+
 
 /*////////////////////////////*/
    /*PHP SHOPPING CART PAGE*/
