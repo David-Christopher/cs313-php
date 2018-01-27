@@ -101,7 +101,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                                 <td class="table_space">&nbsp;</td>
                                 <td><?php echo( $_SESSION["cost"][$i] ); ?></td>
                                 <td class="table_space">&nbsp;</td>
-                                <td><a href="?remove=<?php echo($i); ?>">remove from cart</a></td>
+                                <td><a class="clearCart" href="?remove=<?php echo($i); ?>">remove from cart</a></td>
                             </tr>
                         <?php $total = $total + $_SESSION["cost"][$i]; }
                         $_SESSION["total"] = $total;?>
