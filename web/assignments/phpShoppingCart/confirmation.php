@@ -109,13 +109,104 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                             </tr>
                         </table>
                     <?php }?>
+                    <h2>Shipping to:</h2>
                     <div class="shipping-info">
-                        <?php echo $_POST["name"]; ?><br>
-                        <?php echo $_POST["address1"]; ?>
-                        <?php echo $_POST["address2"]; ?><br>
-                        <?php echo $_POST["city"]; ?><?php echo ", "?>
-                        <?php echo $_POST["state"]; ?><?php echo ", "?>
-                        <?php echo $_POST["zip"]; ?><br>
+                        <?php 
+
+                          if ($_POST['name'] != "") {
+                              $_POST['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+                              if ($_POST['name'] == "") {
+                                  $errors .= 'Please enter a valid name.<br/>';
+                              }
+                          } else {
+                              $errors .= 'Please enter your name.<br/>';
+                          }
+
+                          echo $_POST['name'];
+                          echo "<br/>";
+
+                          if (isset($errors)) {
+                            echo $errors;
+                            echo "<br/>";
+                          }
+                          
+                          if ($_POST['address1'] != "") {
+                              $_POST['address1'] = filter_var($_POST['address1'], FILTER_SANITIZE_STRING);
+                              if ($_POST['address1'] == "") {
+                                  $errors .= 'Please enter a valid address.<br/>';
+                              }
+                          } else {
+                              $errors .= 'Please enter your address.<br/>';
+                          }
+
+                          echo $_POST['address1'];
+                          echo "<br/>";
+
+
+                          if (isset($errors)) {
+                            echo $errors;
+                            echo "<br/>";
+                          }
+
+                          if (isset($_POST['address2'])) {
+                              echo filter_var($_POST['address2'], FILTER_SANITIZE_STRING);
+                              echo "<br/>";
+                          }
+
+                          if ($_POST['city'] != "") {
+                              $_POST['city'] = filter_var($_POST['city'], FILTER_SANITIZE_STRING);
+                              if ($_POST['city'] == "") {
+                                  $errors .= 'Please enter a valid city.<br/>';
+                              }
+                          } else {
+                              $errors .= 'Please enter your city.<br/>';
+                          }
+
+                          echo $_POST['city'];
+                          echo "<br/>";
+
+
+                          if (isset($errors)) {
+                            echo $errors;
+                            echo "<br/>";
+                          }
+
+                          if ($_POST['state'] != "") {
+                              $_POST['state'] = filter_var($_POST['state'], FILTER_SANITIZE_STRING);
+                              if ($_POST['state'] == "") {
+                                  $errors .= 'Please enter a valid state.<br/>';
+                              }
+                          } else {
+                              $errors .= 'Please enter your state.<br/>';
+                          }
+
+                          echo $_POST['state'];
+                          echo "<br/>";
+
+
+                          if (isset($errors)) {
+                            echo $errors;
+                            echo "<br/>";
+                          }       
+
+                          if ($_POST['number_int'] != "") {
+                              $_POST['number_int'] = filter_var($_POST['number_int'], FILTER_SANITIZE_NUMBER_INT);
+                              if ($_POST['number_int'] == "") {
+                                  $errors .= 'Please enter a valid zip code.<br/>';
+                              }
+                          } else {
+                              $errors .= 'Please enter your zip code.<br/>';
+                          }
+
+                          echo $_POST['number_int'];
+                          echo "<br/>";
+
+
+                          if (isset($errors)) {
+                            echo $errors;
+                            echo "<br/>";
+                          }
+                        ?>
                     </div>
                 </main>
                 <footer class="shopping-cart">

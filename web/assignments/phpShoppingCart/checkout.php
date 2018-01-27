@@ -127,7 +127,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                         <input class="state" type="text" name="state"><br><br>
 
                         <label>Zip Code: </label>
-                        <input type="text" name="zip"><br><br>
+                        <input type="text" name="number_int"><br><br>
                         
                         <input class="checkout" type="submit" value="Purchase Now">
                     </form>
