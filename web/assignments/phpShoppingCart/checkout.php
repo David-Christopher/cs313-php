@@ -111,9 +111,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                     <?php }?>
                     <form class="shoppingForm" action="confirmation.php" method="post">
                         <h2>Enter Shipping Information</h2>
-                        <label>Name: <?php                         if (isset($errors1)) {
-                            echo $errors1;
-                          }?></label>
+                        <label>Name: </label>
                         <input type="text" name="name"><br><br>
                         
                         <label>Address 1: </label>

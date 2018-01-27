@@ -113,26 +113,18 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                     <div class="shipping-info">
                         <?php 
 
-                          if ($_POST['name'] != "") {
-                              $_POST['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-                              if ($_POST['name'] == "") {
-                                  $errors1 .= 'Please enter a valid name.<br/>';
-                                  include 'https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php';
-                              }
-                          } else {
-                              $errors1 .= 'Please enter your name.<br/>';
-                              include 'https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php';
-                          }
-
                           echo $_POST['name'];
                           echo "<br/>";
 
+                          if (isset($errors1)) {
+                            echo $errors1;
+                            echo "<br/>";
+                          }
                           
                           if ($_POST['address1'] != "") {
                               $_POST['address1'] = filter_var($_POST['address1'], FILTER_SANITIZE_STRING);
                               if ($_POST['address1'] == "") {
                                   $errors2 .= 'Please enter a valid address.<br/>';
-                                  include 
                               }
                           } else {
                               $errors2 .= 'Please enter your address.<br/>';
@@ -204,6 +196,10 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                           if (isset($errors5)) {
                             echo $errors5;
                             echo "<br/>";
+                          }
+
+                          if (isset($errors1||$errors2||$errors3||$errors4||$errors5)){
+                            echo '<a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php" class="checkout"><div>Re-enter Checkout Info</div></a>'
                           }
                         ?>
                     </div>
