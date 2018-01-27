@@ -94,14 +94,14 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                                 <td class="table_space">&nbsp;</td>
                                 <td><?php echo($cost[$i]); ?></td>
                                 <td class="table_space">&nbsp;</td>
-                                <td><a href="?add=<?php echo($i); ?>">add to cart</a></td>
+                                <td><a class="checkout" href="?add=<?php echo($i); ?>">add to cart</a></td>
                             </tr>
                             <?php }?>
                             <tr>
                                 <td colspan="5"></td>
                             </tr>
                             <tr>
-                                <td colspan="5"><a href="?refresh=true">refresh Cart</a></td>
+                                <td colspan="5"><a href="?refresh=true">Remove All Items From Cart</a></td>
                             </tr>
                         </table>
                     </div>
