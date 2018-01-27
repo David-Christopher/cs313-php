@@ -161,6 +161,12 @@ a.checkout{
 	text-decoration: none;
 }
 
+a.addCart{
+	text-decoration: none;
+    background: #EE7600;
+    padding: 0 10px;
+}
+
 .checkout div, input.checkout{
     text-align: center;
     width: 150px;

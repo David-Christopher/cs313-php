@@ -94,7 +94,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                                 <td class="table_space">&nbsp;</td>
                                 <td><?php echo($cost[$i]); ?></td>
                                 <td class="table_space">&nbsp;</td>
-                                <td><a class="checkout" href="?add=<?php echo($i); ?>">add to cart</a></td>
+                                <td><a class="addCart" href="?add=<?php echo($i); ?>">add to cart</a></td>
                             </tr>
                             <?php }?>
                             <tr>
