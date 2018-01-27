@@ -82,7 +82,8 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                     <div class="products-store cart">
                     <?php if ( isset($_SESSION["cart"]) ) { ?><br/><br/><br/>
                         <?php if (!isset($errors1) || !isset($errors2) || !isset($errors3) || !isset($errors4) || !isset($errors5)){
-                        echo '<h2>Confirmation of Purchase</h2>';
+                            echo '<h2>Confirmation of Purchase</h2>';
+                          }
                         ?>
                         <table>
                             <tr>
