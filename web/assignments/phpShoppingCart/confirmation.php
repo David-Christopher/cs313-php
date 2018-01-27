@@ -207,7 +207,7 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                             echo "<br/>";
                           }
 
-                          if (isset($errors1||$errors2||$errors3||$errors4||$errors5)){
+                          if (isset($errors1)||isset($errors2)||isset($errors3)||isset($errors4)||isset($errors5)){
                             echo '<a href="https://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/checkout.php" class="checkout"><div>Re-enter Checkout Info</div></a>'
                           }
                         ?>
