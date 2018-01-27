@@ -116,35 +116,35 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                           if ($_POST['name'] != "") {
                               $_POST['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
                               if ($_POST['name'] == "") {
-                                  $errors .= 'Please enter a valid name.<br/>';
+                                  $errors1 .= 'Please enter a valid name.<br/>';
                               }
                           } else {
-                              $errors .= 'Please enter your name.<br/>';
+                              $errors1 .= 'Please enter your name.<br/>';
                           }
 
                           echo $_POST['name'];
                           echo "<br/>";
 
-                          if (isset($errors)) {
-                            echo $errors;
+                          if (isset($errors1)) {
+                            echo $errors1;
                             echo "<br/>";
                           }
                           
                           if ($_POST['address1'] != "") {
                               $_POST['address1'] = filter_var($_POST['address1'], FILTER_SANITIZE_STRING);
                               if ($_POST['address1'] == "") {
-                                  $errors .= 'Please enter a valid address.<br/>';
+                                  $errors2 .= 'Please enter a valid address.<br/>';
                               }
                           } else {
-                              $errors .= 'Please enter your address.<br/>';
+                              $errors2 .= 'Please enter your address.<br/>';
                           }
 
                           echo $_POST['address1'];
                           echo "<br/>";
 
 
-                          if (isset($errors)) {
-                            echo $errors;
+                          if (isset($errors2)) {
+                            echo $errors2;
                             echo "<br/>";
                           }
 
@@ -156,54 +156,54 @@ $cost = array("1.25", "5.75", "2.50", "1.99");
                           if ($_POST['city'] != "") {
                               $_POST['city'] = filter_var($_POST['city'], FILTER_SANITIZE_STRING);
                               if ($_POST['city'] == "") {
-                                  $errors .= 'Please enter a valid city.<br/>';
+                                  $errors3 .= 'Please enter a valid city.<br/>';
                               }
                           } else {
-                              $errors .= 'Please enter your city.<br/>';
+                              $errors3 .= 'Please enter your city.<br/>';
                           }
 
                           echo $_POST['city'];
                           echo "<br/>";
 
 
-                          if (isset($errors)) {
-                            echo $errors;
+                          if (isset($errors3)) {
+                            echo $errors3;
                             echo "<br/>";
                           }
 
                           if ($_POST['state'] != "") {
                               $_POST['state'] = filter_var($_POST['state'], FILTER_SANITIZE_STRING);
                               if ($_POST['state'] == "") {
-                                  $errors .= 'Please enter a valid state.<br/>';
+                                  $errors4 .= 'Please enter a valid state.<br/>';
                               }
                           } else {
-                              $errors .= 'Please enter your state.<br/>';
+                              $errors4 .= 'Please enter your state.<br/>';
                           }
 
                           echo $_POST['state'];
                           echo "<br/>";
 
 
-                          if (isset($errors)) {
-                            echo $errors;
+                          if (isset($errors4)) {
+                            echo $errors4;
                             echo "<br/>";
                           }       
 
                           if ($_POST['number_int'] != "") {
                               $_POST['number_int'] = filter_var($_POST['number_int'], FILTER_SANITIZE_NUMBER_INT);
                               if ($_POST['number_int'] == "") {
-                                  $errors .= 'Please enter a valid zip code.<br/>';
+                                  $errors5 .= 'Please enter a valid zip code.<br/>';
                               }
                           } else {
-                              $errors .= 'Please enter your zip code.<br/>';
+                              $errors5 .= 'Please enter your zip code.<br/>';
                           }
 
                           echo $_POST['number_int'];
                           echo "<br/>";
 
 
-                          if (isset($errors)) {
-                            echo $errors;
+                          if (isset($errors5)) {
+                            echo $errors5;
                             echo "<br/>";
                           }
                         ?>
