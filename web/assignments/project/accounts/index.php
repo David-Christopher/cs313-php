@@ -31,13 +31,13 @@ if ($action == NULL){
 switch ($action){
 
 case 'home':
-     include '/assignments/project/view/home.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/home.php';
     break;
 case 'login':
-     include '/assignments/project/view/login.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/login.php';
     break;
 case 'registration':
-     include '/assignments/project/view/registration.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/registration.php';
     break;
 case 'register':
        
@@ -58,14 +58,14 @@ case 'register':
     // Check for existing email address in the table
     if($existingEmail){
       $message = "<p class='failed-message'>That email address already exists. Do you want to login instead or create account with new email?</p>";
-      include '/assignments/project/view/login.php';
+      include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/login.php';
       exit;
     }
 
     // Check for missing data
     if (empty($adminfirstname) || empty($adminlastname) || empty($adminemail) || empty($adminpassword)) {
         $message = "<p class='failed-message'>Please provide information for all empty form fields.</p>";   
-        include '/assignments/project/view/registration.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/registration.php';
         exit;
     }
     
@@ -83,11 +83,11 @@ case 'register':
     if($regOutcome === 1){
         setcookie('firstname', $adminfirstname, strtotime('+1 year'), '/');
         $message = "<p class='submission-message'>Thanks for registering $adminfirstname.<br/> Please use your email and password to login.</p>";
-        include '/assignments/project/view/login.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/login.php';
      exit;
     } else {
         $message = "<p  class='failed-message'>Sorry $adminfirstname, but the registration failed.<br/> Please try again.</p>";
-        include '/assignments/project/view/registration.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/registration.php';
      exit;
     }   
 case 'Login':
@@ -103,7 +103,7 @@ case 'Login':
     // Run basic checks, return if errors
     if (empty($adminemail) || empty($passwordCheck)) {
       $message = "<p class='failed-message'>Please provide a valid email address and password.</p>";
-      include '/assignments/project/view/login.php';
+      include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/login.php';
       exit;
     }
 
@@ -118,7 +118,7 @@ case 'Login':
     // and return to the login view
     if (!$hashCheck) {
         $message = "<p class='failed-message'>Please check your password and try again.</p>";
-        include '/assignments/project/view/login.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/login.php';
     exit;
     }
 
@@ -142,7 +142,7 @@ case 'Login':
     
     // Send them to the admin view
     //include '../view/admin.php';
-    include '/assignments/project/view/admin.php';
+    include '$_SERVER['DOCUMENT_ROOT']./assignments/project/view/admin.php';
     exit;
 break;
 case 'Logout':
@@ -157,7 +157,7 @@ case 'modAdmin':
     if(count($adminInfo)<1){
      $message = 'Sorry, no account information could be found.';
     }
-    include '/assignments/project/view/admin-update.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin-update.php';
     exit;
 break;
 case 'updateAdmin': 
@@ -175,7 +175,7 @@ case 'updateAdmin':
     // Check for missing data
     if (empty($adminfirstname) || empty($adminlastname) || empty($adminemail)) {
         $message = "<p class='failed-message'>Please provide information for all form fields.</p>";   
-        include '/assignments/project/view/admin-update.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin-update.php';
         exit;
     }
     
@@ -188,7 +188,7 @@ case 'updateAdmin':
         // Check for existing email address in the table
         if($existingEmail){
           $message = "<p class='failed-message'>That email address already exists. Please type in another email.</p>";
-          include '/assignments/project/view/admin-update.php';
+          include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin-update.php';
           exit;
         }
     }
@@ -198,11 +198,11 @@ case 'updateAdmin':
     if ($updateAdminresult) {
      $message = "<p class='submission-message'>Congratulations, $adminfirstname account information was successfully updated.</p>";    
      $_SESSION['message'] = $message;
-     include '/assignments/project/view/admin.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin.php';
      exit;
     } else {
      $message = "<p class='failed-message'>Error. $adminfirstname account information was not updated.</p>";
-    include '/assignments/project/view/admin-update.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin-update.php';
     exit;
    }
    
@@ -221,7 +221,7 @@ case 'updateAdminpassword':
     // Check for missing data
     if (empty($checkPassword)) {
         $message = "<p class='failed-message'>Please provide information for all form fields.</p>";   
-        include '/assignments/project/view/admin-update.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin-update.php';
         exit;
     }
 
@@ -233,12 +233,12 @@ case 'updateAdminpassword':
             $adminfirstname = $_SESSION['adminData']['adminfirstname'];
             $message = "<p class='submission-message'>Congratulations, $adminfirstname, your password was successfully updated.</p>";
             $_SESSION['message'] = $message;
-            include '/assignments/project/view/admin.php';
+            include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin.php';
         exit;
     }else {
      $adminfirstname = $_SESSION['adminData']['adminfirstname'];
      $message = "<p class='failed-message'>Error. $adminfirstname, your password was was not updated.</p>";
-    include '/assignments/project/view/admin-update.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin-update.php';
     exit;
    }
 
@@ -253,12 +253,12 @@ case 'myAccount':
         $adminData['adminid'] = $_SESSION['adminData']['adminid'];
         $adminData['adminlevel'] = $_SESSION['adminData']['adminlevel'];
 
-        include '/assignments/project/view/admin.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin.php';
     } else {
         header('location:http://vast-savannah-73411.herokuapp.com/assignments/project/');
     }
 break;     
 default:
-     include '/assignments/project/view/500.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/500.php';
     break;
 }

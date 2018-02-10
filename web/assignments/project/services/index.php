@@ -34,7 +34,7 @@ if ($action == NULL){
 switch ($action){
 
 case 'newService':
-     include '/assignments/project/view/new_services.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/new_services.php';
     break;
 
 case 'services':
@@ -51,7 +51,7 @@ case 'services':
 // Check for missing data
     if(empty($servicename) || empty($servicedescription)){
         $message = "<p class='failed-message'>Please provide information for the empty form fields.</p>";
-        include '/assignments/project/view/new_services.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/new_services.php';
     exit; }
 
     // Send the data to the model
@@ -60,11 +60,11 @@ case 'services':
     // Check and report the result
     if($addOutcome === 1){
         $message = "<p class='submission-message'>Congratulations, $servicename, was successfully added.</p>";
-        include '/assignments/project/view/service-mgmt.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/service-mgmt.php';
      exit;
     } else {
         $message = "<p class='failed-message'>Sorry, $servicename failed to be added.<br/> Please try again.</p>";
-        include '/assignments/project/view/new_services.php';
+        include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/new_services.php';
      exit;
     }
 break;  
@@ -76,7 +76,7 @@ case 'mod':
     if(count($serviceInfo)<1){
      $message = 'Sorry, no service information could be found.';
     }
-    include '/assignments/project/view/service-update.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/service-update.php';
     exit;
 break;
 
@@ -88,7 +88,7 @@ case 'del':
      $message = 'Sorry, no service information could be found.';
     }
     
-    include '/assignments/project/view/service-delete.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/service-delete.php';
     exit;
 break;
 
@@ -99,7 +99,7 @@ case 'updateService':
     
    if (empty($servicename) || empty($servicedescription)) {
      $message = '<p class="failed-message">Please complete all information for the service!</p>';
-    include '/assignments/project/view/service-update.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/service-update.php';
     exit;
    }  $updateResult = updateService($servicename, $servicedescription, $serviceid);
     
@@ -111,7 +111,7 @@ case 'updateService':
      exit;
     } else {
      $message = "<p class='failed-message'>Error. $servicename was not updated.</p>";
-    include '/assignments/project/view/service-update.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/service-update.php';
     exit;
    }
  break;
@@ -129,7 +129,7 @@ case 'updateService':
      exit;
     } else {
      $message = "<p class='failed-message'>Error. $servicename was not deleted.</p>";
-    include '/assignments/project/view/service-update.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/service-update.php';
     exit;
    }
  break;
@@ -144,7 +144,7 @@ case 'service_l':
      $serviceDisplay = buildServiceDisplay($services_s);
     }
     
-    include '/assignments/project/view/services.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/services.php';
 break;
  
 case 'detail':
@@ -168,7 +168,7 @@ case 'detail':
         $serviceDetaildisplay = buildServiceDetailDisplay($servicesDetails);
     }
     
-    include '/assignments/project/view/service-detail.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/service-detail.php';
 break;
 
     
@@ -192,6 +192,6 @@ default:
       $message = "<p class='failed-message'>Sorry, no services were returned.</p>";
    }
     
-     include '/assignments/project/view/service-mgmt.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/service-mgmt.php';
     break;
 }
