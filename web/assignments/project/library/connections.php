@@ -12,10 +12,6 @@ function projectConnect(){
      header('Location: /project/view/500.php');
      exit;     
     }
-    else 
-    {
-     echo "connection!";
-    }
 
 //     $host = "ec2-54-227-244-122.compute-1.amazonaws.com";
 //     $dbname = "d9ijibe1kbt68t";
