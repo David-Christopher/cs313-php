@@ -14,8 +14,7 @@ function projectConnect(){
     }
     else 
     {
-     $link = new PDO($con);
-     return $link;
+     echo "connection!";
     }
 
 //     $host = "ec2-54-227-244-122.compute-1.amazonaws.com";
