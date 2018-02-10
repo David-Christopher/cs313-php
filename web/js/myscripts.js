@@ -9,6 +9,9 @@ function displayColor() {
 	div.style.backgroundColor = colorValue;
 }
 
+
+//JQuery --- Outside the Scope of the Class
+///////////////////////////////////////////
 $(document).ready(function() {
 	//Click Me button toggle text
     $("#testButton").click(function () {
@@ -29,5 +32,6 @@ $(document).ready(function() {
         $( "#blueSection" ).toggle( "highlight" );
     });
 });
-
+///////////////////////////////////////////
+//JQuery --- Outside the Scope of the Class
 

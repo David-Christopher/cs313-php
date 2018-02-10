@@ -1,0 +1,972 @@
+@charset "utf-8";
+/* CSS Document */
+/*****************/
+/*
+/* Author: Christopher D.
+/* dav08049@byui.edu
+/* Created: 2/9/2018
+/* Updated: 2/9/2018
+/*
+/* Purpose: Responsive web design stylesheet. To be used to for CS 313
+/*
+**/
+
+/*Media all fits smallest screen size starting at 300px*/
+
+/*****************************************************/
+/*****         START HEADER AND NAV BAR          *****/
+
+        html{
+         box-sizing: border-box;
+        }
+
+        *, *:before, *:after{
+         box-sizing: inherit;
+        }	
+
+        *, h1, h2, h3, h4, h5, h6, p.submission-message, p.service-details-page{
+		font-family: "Comic Sans MS";		
+	}
+        
+	p, a{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	body{
+		margin: 0px;
+		min-width: 400px;
+	}
+/*       
+        input:required:valid, textarea:required:valid {
+            background-color: #3dcd32;
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+*/  
+	.wrapper{
+		background: url("../images/site/background.jpg") no-repeat center center fixed;
+		background-size: cover;
+		height: 100vh;
+		overflow-x: hidden;
+	}
+
+	.page-content-container{
+		margin-left: 15px;
+		margin-right: 15px;
+		background-color: #ffffff;
+	}
+
+	header{
+		height: 50px;
+	}
+
+	.logo{
+		max-width: 100px;
+		float: left;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	.my-account{
+		float: right;
+		margin-top: 8px;
+		margin-right: 10px;
+	}
+
+	.account-folder-img{
+		max-width: 25px;
+	}
+
+	.my-account-link{
+		list-style: none;
+		text-decoration: none;
+		font-family: "Comic Sans MS";
+		color: #000000;
+		font-weight: 600;
+	}
+
+	.top-nav{
+		width: 100%;
+		height: 40px;
+		background-color: #de2226;
+	}
+
+	.top-nav ul{
+		width: 100%
+	}
+
+	.top-nav ul li{
+		list-style: none;
+		float: left;
+    	margin-top: 10px;
+	}
+
+	.top-nav ul li a{
+		text-decoration: none;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #ffffff;
+		font-size: 10px;
+		margin-right: 42px;
+		margin-left: -33px;
+	}
+
+	.top-nav ul li a:hover{
+		color: #de2226;
+		background-color: #ffffff;
+		padding: 16px 5px 14px 4px;
+	    margin-left: -38px;
+	    margin-right: 38px;
+	}
+        
+        .welcome-message{
+            text-align: center;
+        }
+        
+        .admin-link{
+            margin-bottom: 20px;
+        }
+       
+
+
+/*****          END HEADER AND NAV BAR           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****         START TEMPLATE, HOME PAGE         *****/
+
+	main h1{
+		font-size: 24px;
+	    margin-left: 10px;
+	    z-index: 5;
+	    position: relative;
+	}
+
+	main img.main-banner{
+		max-width: 98%;
+	    margin: auto;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+
+	.right-side{
+		float: right;
+		margin-top: -176px;
+		width: 50%;
+	}
+
+	.opacity-layer{
+	    float: right;
+	    height: 168px;
+	    background-color: #ffffff;
+	    opacity: .5;
+	    width: 100%;
+	}
+
+	.right-side-content-position{
+		position: absolute;
+		width: 45%;
+	}
+
+	.main-content{
+		height: 125px;
+	    width: 129px;
+	    margin: auto;
+	    margin-top: 50px;
+	    padding-left: 2px;
+	}
+
+	.main-content h2{
+		font-size: 15px;
+		margin-bottom: 2px;
+		color: #990033;
+		font-weight: 600;
+	}
+
+	.main-content p{
+		font-size: 9px;
+		margin-top: 2px;
+		color: #990033;
+		font-weight: 600;
+	}
+
+	.main-content a img{
+		max-width: 125px;
+	    display: block;
+	    margin: auto;
+	}
+
+	.left-side-img, .right-side-img{
+    	width: 131px;
+	}
+
+	.left-side-img{
+		float: left;
+	}
+
+	.right-side-img{
+		float: right;
+	}
+
+	.left-side-img a,.right-side-img a{
+	    font-size: 10px;
+	    font-weight: 700;
+	    text-align: center;
+	    margin: 5px;
+	    display: block;
+	}
+
+	.grey-background{
+		background-color: #808080;
+	}
+
+	.center-content-recipe img{
+		display: block;
+		margin: auto;
+	}
+
+	.not-mobile{
+		display: none;
+	}
+        
+    .error-content, .upload-image-content{
+            margin-left: 10px;
+    }      
+        
+        
+
+
+/*****           END TEMPLATE, HOME PAGE         *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****       START LOGIN, REGISTRATION PAGE      *****/
+
+    form.account-login, .create-account, form.register-account, form.add-service, .submission-message{
+        padding-left: 15px;
+    }
+    
+    form.account-login label, form.register-account label, form.add-service lable{
+        font-size: 20px;
+    }
+    
+    form.account-login p, form.register-account p, form.add-service p{
+        font-size: 12px;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .login-button{
+        padding-top: 20px;
+    }
+        
+    .create-account-button{
+        margin-bottom: 20px;
+    }
+    
+    .create-account-button a{
+        height: 25px;
+        width: 400px;
+    }
+    
+    input.login-button, .create-account-button a, input.register-button{
+        background-color: #de2226;
+        border: 1px solid #808080;
+        color: #ffffff;
+        padding: 8px;
+    }
+    
+    .login-button:hover, .create-account-button a:hover, .register-button:hover{
+        cursor: pointer; 
+        background-color:#ffffff;
+        border-color: #de2226;
+        color: #de2226;
+    }
+    
+    .create-account-button a{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    
+    .register-button, .login-button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 20px auto;
+    }
+    
+    p.submission-message{
+            font-family: "Comic Sans MS";
+            color: #ffffff;
+            font-size: 22px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background: #3dcd32;
+    }
+    
+    div.admin-functions, .update-account-info{
+        margin-left: 12px;
+    }
+    
+    
+
+/*****        END LOGIN, REGISTRATION PAGE       *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****            START SERVICE   PAGES          *****/
+
+    .management-content{
+        padding-left: 12px;
+    }
+    
+    h2.management-h2{
+        font-size: 18px;
+    }
+    
+    p.failed-message{
+        font-family: "Comic Sans MS";
+        font-size: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 12px;
+        color: #de2226;
+    }
+    
+    .cell-Header-background, .cell-background:nth-child(odd){
+        background: #D3D3D3;
+    }
+    
+    ul#service-display li{
+        list-style: none;
+    }
+    
+    #service-display, .service-detail-display{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 202px;
+        margin: auto;
+    }
+    #service-display li, .service-detail-display p{
+        margin-bottom: .5em;
+        border: 1px #ccc solid;
+        list-style-type: none;
+        flex: 1 1 auto;
+        width: 202px;
+    }
+    #service-display li img, .service-detail-display img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .service-detail-display{
+        width: 300px;
+    }
+    
+    .service-detail-display:last-child{
+        padding-bottom: 25px;
+    }        
+    
+    .service-detail-display h1{
+        text-align: center;
+    }
+
+    .service-detail-display p{
+        width: 300px;
+        border: 0px;
+    }
+    
+    p.service-details-page{
+        font-size: 18px;
+    }
+    
+    .service-detail-display img{
+        height: 275px;
+    }
+    
+/*****             END SERVICE   PAGES           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****              START FOOTER                 *****/
+
+	footer{
+            border-top: 3px solid #000000;
+            margin-left: 8px;
+            margin-right: 8px;
+            padding-bottom: 5px;
+	}
+
+	footer p{
+	    font-size: 8px;
+	    text-align: center; 
+	    margin-top: 1px;
+	    margin-bottom: 1px;
+	}
+ 
+/*****               END FOOTER                  *****/
+/*****************************************************/
+
+
+@media all and (min-width: 342px) {
+
+/*****************************************************/
+/*****         START HEADER AND NAV BAR          *****/
+
+	header{
+	    height: 60px;
+	}
+
+	.logo{
+	    max-width: 128px;
+	}
+
+	.my-account{
+		margin-top: 12px;
+	}
+
+	.account-folder-img{
+	    max-width: 28px;
+	}
+
+	.my-account-link{
+		font-size: 18px;
+	}
+
+	.top-nav{
+		height: 46px;
+	}
+
+	.top-nav ul li a{
+		font-size: 12px;
+		margin-left: -32px;
+	}
+
+	.top-nav ul li a:hover{
+		padding: 14px 5px 16px 4px;
+    	margin-left: -37px;
+	}
+
+/*****          END HEADER AND NAV BAR           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****          START TEMPLATE, HOME PAGE        *****/
+
+	main h1{
+		font-size: 28px
+	}
+
+	.right-side{
+		margin-top: -220px;
+	}
+
+	.opacity-layer{
+		height: 210px;
+	}
+
+	.main-content{
+		margin-top: 80px;
+	}
+
+
+/*****           END TEMPLATE, HOME PAGE         *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****              START FOOTER                 *****/
+
+	footer p{
+		font-size: 9px;
+	}
+ 
+/*****               END FOOTER                  *****/
+/*****************************************************/
+}
+
+
+@media all and (min-width: 450px) {
+
+
+/*****************************************************/
+/*****          START TEMPLATE, HOME PAGE        *****/
+
+	.right-side{
+	    margin-top: -265px;
+	}
+
+	.opacity-layer{
+	    height: 260px;
+	}
+
+	.main-content{
+		width: 172px;
+		margin-top: 83px;
+	}
+
+	.main-content p {
+	    font-size: 12px;
+	}
+
+	.main-content a img{
+	    max-width: 172px;
+	}
+
+	.content-reviews h3, .content-recipes h3{
+	    font-size: 16px;
+	}
+
+	.content-reviews ul li{
+	    font-size: 11px;
+	}
+
+	.content-reviews, .content-recipes{
+		width: 280px;
+	}
+
+	.left-side-img, .right-side-img{
+	    width: 139px;
+	}
+
+	.left-side-img a, .right-side-img a{
+		font-size: 11px;
+	}
+
+
+
+/*****           END TEMPLATE, HOME PAGE         *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****           START SERVICE   PAGES           *****/
+    
+    .service-detail-display {
+        width: 385px;
+    }
+
+    .service-detail-display h1{
+        font-size: 40px;
+    }
+
+    .service-detail-display p{
+        width: 385px;
+    }
+    
+    p.service-details-page{
+        font-size: 18px;
+    }
+    
+    .service-detail-display img{
+        height: 385px;
+    }
+    
+    p.price-details{
+        color: #de2226;
+        font-size: 40px;
+    }
+
+/*****             END SERVICE   PAGES           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****              START FOOTER                 *****/
+
+
+ 
+/*****               END FOOTER                  *****/
+/*****************************************************/
+}
+
+
+@media all and (min-width: 504px) {
+
+/*****************************************************/
+/*****         START HEADER AND NAV BAR          *****/
+
+	header{
+	    height: 85px;
+	}
+
+	.logo{
+	    max-width: 180px;
+	}
+
+	.my-account{
+		margin-top: 18px;
+	}
+
+	.account-folder-img{
+		max-width: 30px;
+	}
+
+	.my-account-link{
+		font-size: 22px;
+	}
+
+	.top-nav{
+	    height: 54px;
+	}
+
+	.top-nav ul li{
+		margin-top: 17px;
+	}
+
+	.top-nav ul li a{
+		font-size: 20px;
+		margin-left: -30px;
+	}
+
+	.top-nav ul li a:hover{
+		padding: 13px 5px 16px 5px;
+	    margin-left: -36px;		
+	}
+
+
+/*****          END HEADER AND NAV BAR           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****         START TEMPLATE, HOME PAGE         *****/
+
+
+	main h1{
+	    font-size: 35px;
+	}
+
+	.right-side{
+	    margin-top: -310px;
+	}
+
+	.opacity-layer{
+	    height: 300px;
+	}
+
+	.main-content{
+		width: 198px;
+		margin-top: 105px;
+	}
+
+	.main-content h2{
+		font-size: 20px;
+		font-weight: 900;
+	}
+
+	.main-content p{
+		font-size: 14px;
+	}
+
+	.main-content a img{
+	    max-width: 200px;
+	}
+
+
+/*****          END TEMPLATE, HOME PAGE          *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****              START FOOTER                 *****/
+
+	footer p{
+	    font-size: 11px;
+	    font-weight: 600;
+	}
+ 
+/*****               END FOOTER                  *****/
+/*****************************************************/
+}
+
+@media all and (min-width: 705px) {	
+
+/*****************************************************/
+/*****         START HEADER AND NAV BAR          *****/
+  
+	.top-nav{
+	    height: 70px;
+	}
+
+	.top-nav ul li{
+		margin-top: 24px;
+	}
+
+	.top-nav ul li a{
+		font-size: 22px;
+		margin-right: 58px;
+		margin-left: -28px;
+	}
+
+	.top-nav ul li a:hover{
+	    padding: 18px 5px 21px 5px;
+	    margin-right: 54px;
+	    margin-left: -34px;
+	}
+
+
+/*****          END HEADER AND NAV BAR           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****         START TEMPLATE, HOME PAGE         *****/
+
+	.right-side-content-position{
+		position: relative;
+	    width: 45%;
+	    float: right;
+	    margin-right: 100px;
+	}
+
+	.opacity-layer{
+	    display: none;
+	}
+
+	.main-content{
+		width: 224px;
+    	margin-right: 18px;
+		margin-top: 30px;
+	}
+
+	.main-content h2{
+		font-size: 23px;
+	}
+
+	.main-content p{
+		font-size: 16px;
+	}
+
+	.main-content a img{
+		max-width: 227px;
+	}
+        
+    .home-main-body{
+        height: 680px;
+    }
+
+	.mobile{
+		display: none;
+	}
+
+	.not-mobile{
+		display: inline-block;
+	}
+
+	.center-content{
+		width: 650px;
+	    margin: auto;
+	}
+
+	.left-side-img, .right-side-img{
+		width: 108px;
+	}
+
+	.left-side-img a, .right-side-img a{
+		font-size: 14px;
+	    margin: auto;
+	    margin-top: 8px;
+	    margin-bottom: 8px;
+	}
+
+	.right-side-img{
+		margin-bottom: 17px;
+	}
+
+	.content-reviews ul{
+		padding-left: 50px;
+	}
+
+	.grey-background{
+		padding-bottom: 5px;
+	}
+
+/*****          END TEMPLATE, HOME PAGE          *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****              START FOOTER                 *****/
+
+	footer{
+		margin-top: 30px;
+	}
+
+	footer.template-footer{
+		margin-top: 0px;
+	}
+
+	footer p{
+		font-size: 12px;
+	}
+
+ 
+/*****               END FOOTER                  *****/
+/*****************************************************/
+}
+
+@media all and (min-width: 768px) {
+    
+    .home-main-body{
+        height: 700px;
+    }
+
+/*****************************************************/
+/*****            START SERVICE   PAGES          *****/
+    
+    .center-details{
+        width: 696px;
+        margin: auto;
+    }
+        
+    #service-display{
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: 600px;
+        margin: 0px;
+    }
+    
+    #service-display{
+        margin: auto;
+        text-align: center;
+    }
+    
+    #service-display li, .service-detail-display{
+        max-width: 200px;
+        flex: 1 0 auto;
+        max-height: 400px; 
+    }
+    
+    .service-detail-display {
+        display: inline-block;
+        width: 375px;
+        margin-right: 15px;
+        max-width: 100%;
+    }
+    
+    .service-detail-display:last-child{
+        width: 305px;
+        margin-right: 0px;
+    }
+
+    .service-detail-display h1{
+        font-size: 35px;
+    }
+
+    .service-detail-display p{
+        width: 307px;
+    }
+    
+
+/*****             END SERVICE   PAGES           *****/
+/*****************************************************/
+
+}
+
+@media all and (min-width: 805px) {
+
+/*Media all largest responsive size*/
+
+/*****************************************************/
+/*****         START HEADER AND NAV BAR          *****/
+
+	.page-content-container{
+		max-width: 790px;
+		margin: auto;
+	}	
+
+/*****          END HEADER AND NAV BAR           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****       START TEMPLATE, HOME PAGE           *****/
+	
+
+	.main-content{
+		margin-top: -28px;
+	}
+
+	.center-content{
+		width: 680px;
+	}
+        
+
+/*****         END TEMPLATE, HOME PAGE           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****              START FOOTER                 *****/
+
+
+ 
+/*****               END FOOTER                  *****/
+/*****************************************************/
+}
+
+
+@media all and (min-width: 1060px) {
+
+/*Media all largest responsive size*/
+
+/*****************************************************/
+/*****         START HEADER AND NAV BAR          *****/
+
+	.page-content-container{
+		max-width: 900px;
+	}	
+
+/*****          END HEADER AND NAV BAR           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****        START TEMPLATE, HOME PAGE          *****/
+
+	.main-content {
+	    margin-top: -65px;
+	}
+
+	.center-content {
+	    width: 715px;
+	}
+	
+	.home-main-body{
+        height: 770px;
+    }
+/*****         END TEMPLATE, HOME PAGE           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****            START SERVICE   PAGES          *****/
+    
+    .center-details{
+        width: 860px;
+    }
+    
+    .service-detail-display {
+        width: 440px;
+        margin-right: 35px;
+    }
+    
+    .service-detail-display:last-child{
+        width: 385px;
+        margin-right: 0px;
+    }
+
+    .service-detail-display h1{
+        font-size: 35px;
+    }
+
+    .service-detail-display p{
+        width: 386px;
+        font-size: 20px;
+    }
+ 
+    .service-detail-display img {
+        height: 440px;
+    }
+
+/*****             END SERVICE   PAGES           *****/
+/*****************************************************/
+
+/*****************************************************/
+/*****              START FOOTER                 *****/
+
+
+ 
+/*****               END FOOTER                  *****/
+/*****************************************************/
+}
