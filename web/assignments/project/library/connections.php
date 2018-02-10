@@ -9,7 +9,7 @@ function projectConnect(){
     $dbname = "d9ijibe1kbt68t";
     $username = "vuaxwnyfjjaypc";
     $password = "96503a1bb6e5a2db2058ed7c6f9fbe4e43b157f1637905b89756e6acbfa13d9c";
-    $port = "5432";
+    $port = "5433";
 
     $dsn = "pgsql:host=$host;dbname=$dbname;username=$username;port=$port;password=$password";
 
