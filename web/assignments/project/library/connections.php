@@ -9,12 +9,15 @@ function projectConnect(){
 
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
-    try {
-        $link = new PDO($con, $options);
-        return $link;
-    } catch(PDOException $ex) {
-        header('Location: /project/view/500.php');
-      exit;
+    if (!$con) 
+    {
+     header('Location: /project/view/500.php');
+     exit;     
+    }
+    else 
+    {
+     $link = new PDO($con, $options);
+     return $link;
     }
 
 //     $host = "ec2-54-227-244-122.compute-1.amazonaws.com";
