@@ -142,7 +142,7 @@ case 'Login':
     
     // Send them to the admin view
     //include '../view/admin.php';
-    include '$_SERVER['DOCUMENT_ROOT']./assignments/project/view/admin.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin.php';
     exit;
 break;
 case 'Logout':
