@@ -98,8 +98,9 @@ case 'Login':
     $adminpassword = filter_input(INPUT_POST, 'adminpassword');
     $passwordCheck = checkPassword($adminpassword);
     
+    $hashedPassword = password_hash($adminpassword, PASSWORD_DEFAULT);
     print $adminemail;
-    print $adminpassword;
+    print $hashedPassword;
     print $adminData['adminpassword'];
  exit;
     
