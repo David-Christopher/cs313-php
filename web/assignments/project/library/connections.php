@@ -18,12 +18,12 @@ function projectConnect(){
 
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
-    try {
-        $link = new PDO($dsn, $username, $password, $options);
-        return $link;
-    } catch(PDOException $ex) {
-        header('Location: /assignments/project/view/500.php');
-      exit;
-    }
+    // try {
+    //     $link = new PDO($dsn, $username, $password, $options);
+    //     return $link;
+    // } catch(PDOException $ex) {
+    //     header('Location: /assignments/project/view/500.php');
+    //   exit;
+    // }
 }
 projectConnect();
