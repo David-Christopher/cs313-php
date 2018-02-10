@@ -92,8 +92,8 @@ case 'register':
     }   
 case 'Login':
     //Filter and store data
-
-    print("this should be the variable".$adminemail."is it showing?");
+    $submittedEmail     = $_POST['adminemail'];
+    print("this should be the variable = ".$submittedEmail);
     exit;
 
     $adminemail = filter_input(INPUT_POST, "adminemail", FILTER_SANITIZE_EMAIL);
