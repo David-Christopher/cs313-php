@@ -92,7 +92,7 @@ case 'register':
     }   
 case 'Login':
     //Filter and store data
-    $adminemail = filter_input(INPUT_POST, 'adminemail', FILTER_SANITIZE_EMAIL);
+    $adminemail = filter_input(INPUT_POST, "adminemail", FILTER_SANITIZE_EMAIL);
     print $adminemail;
     exit;
     $adminemail = checkEmail($adminemail);
