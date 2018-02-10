@@ -15,7 +15,7 @@ require_once 'library/functions.php';
 require_once 'model/project-model.php';
 
 
-// Get $cateories array data
+// Get $service array data
 $services = getServices();
 
 createNav();

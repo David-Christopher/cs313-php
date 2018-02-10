@@ -16,7 +16,7 @@
         <?php echo createNav(); ?>
     </nav>
     <main class="home-main-body">
-        <h1>Welcome to Plumbing Company</h1>
+        <h1>Welcome to the Plumbing Company</h1>
         <div>
             <img class="main-banner" src="images/site/feature.jpg" alt="Plumbing feature">
             <div class="right-side">
@@ -36,7 +36,7 @@
     </main>
     <footer>
 		<?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/footer.php';?>
-        <p>Last Updated: 20 September, 2017</p>
+        <p>Last Updated: 9 February, 2018</p>
     </footer>
     </div><!--end of content container tag-->
     </div><!--end of background image tag-->
