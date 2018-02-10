@@ -6,13 +6,13 @@
 session_start();
 
 // Get the database connection file
-require_once '/assignments/project/library/connections.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/assignments/project/library/connections.php';
 
 // Get the database connection file
-require_once '/assignments/project/library/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/assignments/project/library/functions.php';
 
 // Get the project model for use as needed
-require_once '/assignments/project/model/project-model.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/assignments/project/model/project-model.php';
 
 
 // Get $service array data
@@ -36,10 +36,10 @@ if ($action == NULL){
 switch ($action){
 
 case 'home':
-     include '/assignments/project/view/home.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/home.php';
     break;
 
 default:
-     include '/assignments/project/view/500.php';
+     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/500.php';
     break;
 }
