@@ -98,6 +98,10 @@ case 'Login':
     $adminpassword = filter_input(INPUT_POST, 'adminpassword');
     $passwordCheck = checkPassword($adminpassword);
     
+    print $adminemail;
+    print $adminpassword;
+    print $adminData['adminpassword'];
+ exit;
     
       
     // Run basic checks, return if errors
@@ -111,10 +115,6 @@ case 'Login':
     // Query the admin data based on the email address
     $adminData = getAdmin($adminemail);
 
-    print $adminpassword;
-    print $adminData['adminpassword'];
- exit;
- 
     $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
     //var_dump($hashCheck);
     //exit;
