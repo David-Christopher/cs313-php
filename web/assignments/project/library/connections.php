@@ -7,8 +7,6 @@
 function projectConnect(){
     $con = "d9ijibe1kbt68t host=ec2-54-227-244-122.compute-1.amazonaws.com port=5432 user=vuaxwnyfjjaypc password=96503a1bb6e5a2db2058ed7c6f9fbe4e43b157f1637905b89756e6acbfa13d9c sslmode=require";
 
-    $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-
     if (!$con) 
     {
      header('Location: /project/view/500.php');
@@ -16,7 +14,7 @@ function projectConnect(){
     }
     else 
     {
-     $link = new PDO($con, $options);
+     $link = new PDO($con);
      return $link;
     }
 
