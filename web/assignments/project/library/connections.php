@@ -13,14 +13,20 @@ function projectConnect(){
 
     $dsn = "pgsql:host=$host;dbname=$dbname;username=$username;port=$port;password=$password";
 
-    $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
-    try {
-        $link = new PDO($dsn, $username, $password, $options);
-        return $link;
-    } catch(PDOException $ex) {
-        header('Location: /project/view/500.php');
-      exit;
-    }
+if($db){
+  echo "Connected <br />".$dbname;
+}else {
+  echo "Not connected";
+}
+    // $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+
+    // try {
+    //     $link = new PDO($dsn, $username, $password, $options);
+    //     return $link;
+    // } catch(PDOException $ex) {
+    //     header('Location: /project/view/500.php');
+    //   exit;
+    // }
 }
 projectConnect();
