@@ -22,7 +22,7 @@ function projectConnect(){
         $link = new PDO($dsn, $username, $password, $options);
         return $link;
     } catch(PDOException $ex) {
-        header('Location: /project/view/500.php');
+        header('Location: /assignments/project/view/500.php');
       exit;
     }
 }
