@@ -14,7 +14,7 @@ function projectConnect(){
     $password = "96503a1bb6e5a2db2058ed7c6f9fbe4e43b157f1637905b89756e6acbfa13d9c";
     $port = "5433";
 
-    $dsn = "pgsql:host=$host;dbname=$dbname;username=$username;port=$port;password=$password";
+    $dsn = "pgsql:host=$host;dbname=$dbname;port=$port;";
 
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 
