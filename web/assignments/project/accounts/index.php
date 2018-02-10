@@ -93,18 +93,15 @@ case 'register':
 case 'Login':
     //Filter and store data
     $adminemail = filter_input(INPUT_POST, 'adminemail', FILTER_SANITIZE_EMAIL);
+    print $adminemail;
+    exit;
     $adminemail = checkEmail($adminemail);
     
     $adminpassword = filter_input(INPUT_POST, 'adminpassword');
     $passwordCheck = checkPassword($adminpassword);
-    
-    $hashedPassword = password_hash($adminpassword, PASSWORD_DEFAULT);
-    print $adminemail;
-    print $hashedPassword;
-    print $adminData['adminpassword'];
- exit;
-    
-      
+     
+
+
     // Run basic checks, return if errors
     if (empty($adminemail) || empty($passwordCheck)) {
       $message = "<p class='failed-message'>Please provide a valid email address and password.</p>";
