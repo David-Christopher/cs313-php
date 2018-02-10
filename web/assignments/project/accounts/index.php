@@ -111,9 +111,9 @@ case 'Login':
     // Query the admin data based on the email address
     $adminData = getAdmin($adminemail);
 
-    echo $adminpassword;
-    echo $adminData['adminpassword'];
-    exit;
+    print $adminpassword;
+    print $adminData['adminpassword'];
+ exit;
  
     $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
     //var_dump($hashCheck);
