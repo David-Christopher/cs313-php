@@ -3,7 +3,7 @@ if(!isset($_SESSION['loggedin'])){
     header("Location: http://vast-savannah-73411.herokuapp.com/assignments/project/index.php");
 }
 if ($_SESSION['adminData']['adminlevel'] < 2) {
- header('location: /project/');
+ header('location: /assignments/project/');
  exit;
 }
 if (isset($_SESSION['message'])) {
@@ -16,13 +16,13 @@ if (isset($_SESSION['message'])) {
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Management | Plumbing Co.</title>
-    <link href="../css/plumbingStyles.css" type="text/css" rel="stylesheet"/>
+    <link href="/assignments/project/css/plumbingStyles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
     <div class="wrapper"><!--background image applied here-->
     <div class="page-content-container"><!--content container applied here-->
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/header.php';?>
+        <?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/header.php';?>
     </header>
     <nav class="top-nav">
         <?php echo createNav(); ?>
@@ -37,7 +37,7 @@ if (isset($_SESSION['message'])) {
         <div class="management-content">
              <h2 class="management-h2">Welcome to the service management page. Please choose an option below:</h2>
             <ul>
-                <li><a href="/project/services/index.php?action=newService">Add a New Service</a></li>
+                <li><a href="assignments/project/services/index.php?action=newService">Add a New Service</a></li>
             </ul>
 
                      
@@ -51,7 +51,7 @@ if (isset($_SESSION['message'])) {
        
     </main>
     <footer class="template-footer">
-		<?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/footer.php';?>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/footer.php';?>
         <p>Last Updated: 9 February, 2018</p>
     </footer>
     </div><!--end of content container tag-->

@@ -9,13 +9,13 @@ if(!isset($_SESSION['loggedin'])){
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php if(isset($adminInfo['adminfirstname'])){ echo "Modify $adminInfo[adminfirstname] Account";} elseif(isset($adminfirstname)) { echo $adminfirstname; }?> | Plumbing Co.</title>
-    <link href="../css/plumbingStyles.css" type="text/css" rel="stylesheet"/>
+    <link href="/assignments/project/css/plumbingStyles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
     <div class="wrapper"><!--background image applied here-->
     <div class="page-content-container"><!--content container applied here-->
     <header>
-		<?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/header.php';?>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/header.php';?>
     </header>
     <nav class="top-nav">
         <?php echo createNav(); ?>
@@ -29,7 +29,7 @@ if(!isset($_SESSION['loggedin'])){
             }
         ?>
         
-        <form class="register-account" method="post" action="/project/accounts/index.php">
+        <form class="register-account" method="post" action="/assignments/project/accounts/index.php">
             <p>Modify the account details below. All fields are required!</p>
             <div class="label-div">
                 
@@ -69,7 +69,7 @@ if(!isset($_SESSION['loggedin'])){
         </form>
     </main>
     <footer class="template-footer">
-		<?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/footer.php';?>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/footer.php';?>
         <p>Last Updated: 9 February, 2018</p>
     </footer>
     </div><!--end of content container tag-->

@@ -6,16 +6,16 @@
 session_start();
 
 // Get the database connection file
-require_once '../library/connections.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/assignments/project/library/connections.php';
 
 // Get the project model for use as needed
-require_once '../model/project-model.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/assignments/project/model/project-model.php';
 
 // Get the accounts model for use as needed
-require_once '../model/services-model.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/assignments/project/model/services-model.php';
 
 // Get the functions library
-require_once '../library/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/assignments/project/library/functions.php';
 
 // Get $cateories array data
 $services = getServices();
@@ -34,7 +34,7 @@ if ($action == NULL){
 switch ($action){
 
 case 'newService':
-     include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/new_services.php';
+     include '/assignments/project/view/new_services.php';
     break;
 
 case 'services':
@@ -51,7 +51,7 @@ case 'services':
 // Check for missing data
     if(empty($servicename) || empty($servicedescription)){
         $message = "<p class='failed-message'>Please provide information for the empty form fields.</p>";
-        include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/new_services.php';
+        include '/assignments/project/view/new_services.php';
     exit; }
 
     // Send the data to the model
@@ -60,11 +60,11 @@ case 'services':
     // Check and report the result
     if($addOutcome === 1){
         $message = "<p class='submission-message'>Congratulations, $servicename, was successfully added.</p>";
-        include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/service-mgmt.php';
+        include '/assignments/project/view/service-mgmt.php';
      exit;
     } else {
         $message = "<p class='failed-message'>Sorry, $servicename failed to be added.<br/> Please try again.</p>";
-        include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/new_services.php';
+        include '/assignments/project/view/new_services.php';
      exit;
     }
 break;  
@@ -76,7 +76,7 @@ case 'mod':
     if(count($serviceInfo)<1){
      $message = 'Sorry, no service information could be found.';
     }
-    include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/service-update.php';
+    include '/assignments/project/view/service-update.php';
     exit;
 break;
 
@@ -88,7 +88,7 @@ case 'del':
      $message = 'Sorry, no service information could be found.';
     }
     
-    include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/service-delete.php';
+    include '/assignments/project/view/service-delete.php';
     exit;
 break;
 
@@ -99,7 +99,7 @@ case 'updateService':
     
    if (empty($servicename) || empty($servicedescription)) {
      $message = '<p class="failed-message">Please complete all information for the service!</p>';
-    include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/service-update.php';
+    include '/assignments/project/view/service-update.php';
     exit;
    }  $updateResult = updateService($servicename, $servicedescription, $serviceid);
     
@@ -107,11 +107,11 @@ case 'updateService':
     if ($updateResult) {
      $message = "<p class='submission-message'>Congratulations, $servicename was successfully updated.</p>";
      $_SESSION['message'] = $message;
-     header('location: /project/services/');
+     header('location: /assignments/project/services/');
      exit;
     } else {
      $message = "<p class='failed-message'>Error. $servicename was not updated.</p>";
-    include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/service-update.php';
+    include '/assignments/project/view/service-update.php';
     exit;
    }
  break;
@@ -125,11 +125,11 @@ case 'updateService':
     if ($deleteResult) {
      $message = "<p class='submission-message'>Congratulations, $servicename was successfully deleted.</p>";
      $_SESSION['message'] = $message;
-     header('location: /project/services/');
+     header('location: /assignments/project/services/');
      exit;
     } else {
      $message = "<p class='failed-message'>Error. $servicename was not deleted.</p>";
-    include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/service-update.php';
+    include '/assignments/project/view/service-update.php';
     exit;
    }
  break;
@@ -144,7 +144,7 @@ case 'service_l':
      $serviceDisplay = buildServiceDisplay($services_s);
     }
     
-    include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/category.php';
+    include '/assignments/project/view/services.php';
 break;
  
 case 'detail':
@@ -168,7 +168,7 @@ case 'detail':
         $serviceDetaildisplay = buildServiceDetailDisplay($servicesDetails);
     }
     
-    include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/service-detail.php';
+    include '/assignments/project/view/service-detail.php';
 break;
 
     
@@ -192,6 +192,6 @@ default:
       $message = "<p class='failed-message'>Sorry, no services were returned.</p>";
    }
     
-     include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/service-mgmt.php';
+     include '/assignments/project/view/service-mgmt.php';
     break;
 }

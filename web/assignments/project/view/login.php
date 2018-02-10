@@ -4,13 +4,13 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Login</title>
-    <link href="../css/plumbingStyles.css" type="text/css" rel="stylesheet"/>
+    <link href="/assignments/project/css/plumbingStyles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
     <div class="wrapper"><!--background image applied here-->
     <div class="page-content-container"><!--content container applied here-->
     <header>
-		<?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/header.php';?>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/header.php';?>
     </header>
     <nav class="top-nav">
         <?php echo createNav(); ?>
@@ -24,7 +24,7 @@
             }
         ?>
         
-        <form class="account-login"  method="post" action="/project/accounts/index.php">
+        <form class="account-login"  method="post" action="/assignments/project/accounts/index.php">
             <div class="label-div">
               <label><b>Email Address</b></label><br/>
               <input type="email" placeholder="Enter Email" name="adminEmail" required <?php if(isset($adminemail)){echo "value='$adminemail'";}?>> <br/>
@@ -42,13 +42,13 @@
         <div class="create-account">
         <h3>Not a member?</h3>
         <div class="create-account-button">
-            <a href="/project/accounts/index.php?action=registration">Create an Account</a>
+            <a href="/assignments/project/accounts/index.php?action=registration">Create an Account</a>
         </div>  
         
         </div>    
     </main>
     <footer class="template-footer">
-		<?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/footer.php';?>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/footer.php';?>
         <p>Last Updated: 9 February, 2018</p>
     </footer>
     </div><!--end of content container tag-->

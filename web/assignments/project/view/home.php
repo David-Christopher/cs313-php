@@ -10,7 +10,7 @@
     <div class="wrapper"><!--background image applied here-->
     <div class="page-content-container"><!--content container applied here-->
     <header>
-    	<?php error_log("This is stupid!"); include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/header.php';?>
+    	<?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/header.php';?>
     </header>
     <nav class="top-nav">
         <?php echo createNav(); ?>

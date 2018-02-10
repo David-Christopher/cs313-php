@@ -3,7 +3,7 @@ if(!isset($_SESSION['loggedin'])){
     header("Location: http://vast-savannah-73411.herokuapp.com/assignments/project/index.php");
 }
 if ($_SESSION['adminData']['adminlevel'] < 2) {
- header('location: /project/');
+ header('location: /assignments/project/');
  exit;
 }
 ?>
@@ -13,13 +13,13 @@ if ($_SESSION['adminData']['adminlevel'] < 2) {
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php if(isset($serviceInfo['servicename'])){ echo "Delete $serviceInfo[servicename]";} ?> | Plumbing Co.</title>
-    <link href="../css/plumbingStyles.css" type="text/css" rel="stylesheet"/>
+    <link href="/assignments/project/css/plumbingStyles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
     <div class="wrapper"><!--background image applied here-->
     <div class="page-content-container"><!--content container applied here-->
     <header>
-		<?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/header.php';?>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/header.php';?>
     </header>
     <nav class="top-nav">
         <?php echo createNav(); ?>
@@ -32,7 +32,7 @@ if ($_SESSION['adminData']['adminlevel'] < 2) {
              echo $message;
             }
         ?>
-        <form class="add-service" method="post" action="/project/services/index.php">
+        <form class="add-service" method="post" action="/assignments/project/services/index.php">
             <h3>Confirm Service Deletion. The delete is permanent.</h3>
             <div class="label-div">
                 
@@ -51,7 +51,7 @@ if ($_SESSION['adminData']['adminlevel'] < 2) {
         </form>
     </main>
     <footer class="template-footer">
-		<?php include $_SERVER['DOCUMENT_ROOT'].'/project/common/footer.php';?>
+		<?php include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/common/footer.php';?>
         <p>Last Updated: 9 February, 2018</p>
     </footer>
     </div><!--end of content container tag-->
