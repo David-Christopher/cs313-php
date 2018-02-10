@@ -3,7 +3,7 @@
 //Functions 
 
 // Get the project model for use as needed
-require_once $_SERVER['DOCUMENT_ROOT'].'/project/model/accounts-model.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/assignments/project/model/accounts-model.php';
 
 //Email sticky function
 function checkEmail($adminemail){

@@ -6,13 +6,13 @@
 session_start();
 
 // Get the database connection file
-require_once 'library/connections.php';
+require_once '/assignments/project/library/connections.php';
 
 // Get the database connection file
-require_once 'library/functions.php';
+require_once '/assignments/project/library/functions.php';
 
 // Get the project model for use as needed
-require_once 'model/project-model.php';
+require_once '/assignments/project/model/project-model.php';
 
 
 // Get $service array data
@@ -36,10 +36,10 @@ if ($action == NULL){
 switch ($action){
 
 case 'home':
-     include '/project/view/home.php';
+     include '/assignments/project/view/home.php';
     break;
 
 default:
-     include '/project/view/500.php';
+     include '/assignments/project/view/500.php';
     break;
 }
