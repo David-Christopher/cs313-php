@@ -94,7 +94,7 @@ case 'Login':
     //Filter and store data
     $adminemail = filter_input(INPUT_POST, "adminemail", FILTER_SANITIZE_EMAIL);
     print $adminemail;
-    print("this should be the variable")
+    print("this should be the variable");
     exit;
     $adminemail = checkEmail($adminemail);
     
