@@ -36,10 +36,10 @@ if ($action == NULL){
 switch ($action){
 
 case 'home':
-     include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/home.php';
+     include '/project/view/home.php';
     break;
 
 default:
-     include 'http://vast-savannah-73411.herokuapp.com/assignments/project/view/500.php';
+     include '/project/view/500.php';
     break;
 }
