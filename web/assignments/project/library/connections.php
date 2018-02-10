@@ -22,7 +22,7 @@ function projectConnect(){
         $link = new PDO($dsn, $username, $password, $options);
         return $link;
     } catch(PDOException $ex) {
-        error_log($ex.getMessage());
+        error_log($ex->getMessage());
       exit;
     }
 }
