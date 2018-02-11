@@ -80,7 +80,7 @@
 	.my-account-link{
 		list-style: none;
 		text-decoration: none;
-		font-family: "Comic Sans MS";
+		font-family: Georgia;
 		color: #000000;
 		font-weight: 600;
 	}
@@ -294,7 +294,7 @@
     }
     
     p.submission-message{
-            font-family: "Comic Sans MS";
+            font-family: Georgia;
             color: #ffffff;
             font-size: 22px;
             padding-top: 20px;
@@ -323,7 +323,7 @@
     }
     
     p.failed-message{
-        font-family: "Comic Sans MS";
+        font-family: Georgia;
         font-size: 22px;
         padding-top: 20px;
         padding-bottom: 20px;
