@@ -24,9 +24,9 @@
                 <div class="right-side-content-position">
                     <div class="main-content">
                         <h2>Plumbing Pros!</h2>
-                        <p>Quick Service<br/>
-                        Reliable Experts<br/>
-                        Excellent Craftsmenship</p>
+                        <p>*Quick Service<br/>
+                        *Reliable Experts<br/>
+                        *Excellent Craftsmenship</p>
                     </div>
                 </div>
             </div>
