@@ -147,9 +147,9 @@ case 'updateService':
 // break;
  
 case 'detail':
-    $service = filter_input(INPUT_GET, 'service', FILTER_SANITIZE_NUMBER_INT);
+    $service = filter_input(INPUT_GET, 'service', FILTER_SANITIZE_STRING);
 
-        echo $service;
+    echo $service;
     exit; 
     $servicesDetails = getDetailsByService($service);   
     
