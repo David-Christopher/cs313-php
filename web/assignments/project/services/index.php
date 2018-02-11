@@ -149,8 +149,6 @@ case 'updateService':
 case 'detail':
     $service = filter_input(INPUT_GET, 'service', FILTER_SANITIZE_STRING);
 
-    echo $service;
-    exit; 
     $servicesDetails = getDetailsByService($service);   
     
 //Passing invName to view title
@@ -158,11 +156,9 @@ case 'detail':
        $servicesName = $servicesName['servicename'];
     };
     
-    foreach($servicesDetails as $servicesId){
-       $serviceid = $servicesId['serviceid'];
+    foreach($servicesDetails as $servicedescription){
+       $servicedescription = $servicedescription['servicedescription'];
     }; 
-
-    $serviceid = (int)$serviceid;
     
     if(!count($servicesDetails)){
      $message = "<p class='failed-message'>Sorry, no $service service could be found.</p>";

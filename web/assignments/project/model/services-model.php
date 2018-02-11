@@ -120,22 +120,11 @@ $stmt->closeCursor();
 return $rowsChanged;
 }
 
-function getServiceList($type){
- $db = projectConnect();
- $sql = 'SELECT * FROM inventory WHERE categoryId IN (SELECT categoryId FROM categories WHERE categoryName = :categoryId)';
- $stmt = $db->prepare($sql);
- $stmt->bindValue(':categoryId', $type, PDO::PARAM_STR);
- $stmt->execute();
- $services_s = $stmt->fetchAll(PDO::FETCH_ASSOC);
- $stmt->closeCursor();
- return $services_s;
-}
-
 function getDetailsByService($service){
  $db = projectConnect();
- $sql = 'SELECT * FROM services WHERE serviceid = :serviceid';
+ $sql = 'SELECT * FROM services WHERE servicename = :servicename';
  $stmt = $db->prepare($sql);
- $stmt->bindValue(':serviceid', $service, PDO::PARAM_INT);
+ $stmt->bindValue(':servicename', $service, PDO::PARAM_STR);
 
  $stmt->execute();
  $serviceDetails = $stmt->fetchAll(PDO::FETCH_ASSOC);

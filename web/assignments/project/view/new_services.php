@@ -3,7 +3,7 @@ if(!isset($_SESSION['loggedin'])){
     header("Location: http://vast-savannah-73411.herokuapp.com/assignments/project/index.php");
 }
 if ($_SESSION['adminData']['adminlevel'] < 2) {
- header('location: assignments/project/');
+ header('location: /assignments/project/');
  exit;
 }
 ?>
