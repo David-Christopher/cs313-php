@@ -26,8 +26,8 @@
         
         <form class="account-login"  method="post" action="/assignments/project/accounts/index.php">
             <div class="label-div">
-              <label><b>Email Address</b></label><br/>
-              <input type="email" placeholder="Enter Email" name="adminEmail" required <?php if(isset($adminemail)){echo "value='$adminemail'";}?>> <br/>
+              <label for="adminemail"><b>Email Address</b></label><br/>
+              <input type="email" placeholder="Enter Email" name="adminemail" required <?php if(isset($adminemail)){echo "value='$adminemail'";}?>> <br/>
 
               <label><b>Password</b></label>
               <p>Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character</p>
