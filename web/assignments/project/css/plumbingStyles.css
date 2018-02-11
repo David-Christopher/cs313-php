@@ -730,10 +730,6 @@
 	.main-content a img{
 		max-width: 227px;
 	}
-        
-    .home-main-body{
-        height: 680px;
-    }
 
 	.mobile{
 		display: none;
@@ -796,10 +792,6 @@
 
 @media all and (min-width: 768px) {
     
-    .home-main-body{
-        height: 700px;
-    }
-
 /*****************************************************/
 /*****            START SERVICE   PAGES          *****/
     
@@ -918,9 +910,7 @@
 	    width: 715px;
 	}
 	
-	.home-main-body{
-        height: 770px;
-    }
+
 /*****         END TEMPLATE, HOME PAGE           *****/
 /*****************************************************/
 

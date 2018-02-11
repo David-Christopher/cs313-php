@@ -32,11 +32,11 @@
             </div>
         </div>
         <div class="center-content">
-        <h1>We are true craftsmen</h1>
+        <h2>We are true craftsmen</h2>
         <p>We pride ourselves in leaving your plumbing systems running better than when we came.</p>
-        <h1>Diagnose & fix the problem</h1>
+        <h2>Diagnose & fix the problem</h2>
         <p>We will evaluate the problem and make the proper recommendations to fix and prevent future issues.</p>
-        <h1>You called the right company</h1>
+        <h2>You called the right company</h2>
         <p>We will leave you educated and feeling confident in our work. We value integrity in every aspect of our work.</p>
         </div>
     </main>
