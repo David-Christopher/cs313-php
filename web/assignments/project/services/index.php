@@ -42,7 +42,6 @@ case 'services':
     //echo 'you are in services';exit;
 
     //Filter and store data
-            FILTER_SANITIZE_STRING);
     $servicename = filter_input(INPUT_POST, 'servicename',
             FILTER_SANITIZE_STRING);
     $servicedescription = filter_input(INPUT_POST, 'servicedescription',
