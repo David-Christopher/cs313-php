@@ -37,7 +37,7 @@
                             <h3>Assignments</h3>
                         </div>
                         <div id="center">
-                            <a href="http://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/">PHP Shopping Cart</a>
+                            <a href="http://vast-savannah-73411.herokuapp.com/assignments/phpShoppingCart/">PHP Shopping Cart</a><br>
                             <a href="http://vast-savannah-73411.herokuapp.com/assignments/project/index.php">Personal PHP Project</a>
                         </div>
                     </div>
