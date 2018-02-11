@@ -52,7 +52,7 @@ if(!isset($_SESSION['loggedin'])){
         
         <h2 class="update-account-info">Password Change</h2>
         
-        <form class="register-account" method="post" action="/project/accounts/index.php">
+        <form class="register-account" method="post" action="/assignments/project/accounts/index.php">
             <p>Use this form to change your password.</p>
             <div class="label-div">
               <label><b>New Password</b></label>
