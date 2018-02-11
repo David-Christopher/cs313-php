@@ -100,6 +100,7 @@ case 'Login':
     $passwordCheck = checkPassword($adminpassword);
      
 
+    $hashedPassword = password_hash($adminpassword, PASSWORD_DEFAULT);
 
     // Run basic checks, return if errors
     if (empty($adminemail) || empty($passwordCheck)) {
@@ -112,10 +113,10 @@ case 'Login':
     // Query the admin data based on the email address
     $adminData = getAdmin($adminemail);
 
-    $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
+    $hashCheck = password_verify($adminpassword, $hashedPassword);
+    
+    // $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
 
-    var_dump(password_verify($adminpassword, $adminData['adminpassword']));
-    exit;
     // If the hashes don't match create an error
     // and return to the login view
     if (!$hashCheck) {
