@@ -182,9 +182,9 @@ default:
      $serviceList .= '<tbody>';
      
      foreach ($services_s as $services_) {
-      $serviceList .= "<tr class='cell-background'><td>$services_[invName]</td>";
-      $serviceList .= "<td><a href='/project/services?action=mod&id=$services_[serviceid]' title='Click to modify'>Modify</a></td>";
-      $serviceList .= "<td><a href='/project/services?action=del&id=$services_[serviceid]' title='Click to delete'>Delete</a></td></tr>";
+      $serviceList .= "<tr class='cell-background'><td>$services_[servicename]</td>";
+      $serviceList .= "<td><a href='http://vast-savannah-73411.herokuapp.com/assignments/project/services?action=mod&id=$services_[serviceid]' title='Click to modify'>Modify</a></td>";
+      $serviceList .= "<td><a href='http://vast-savannah-73411.herokuapp.com/assignments//project/services?action=del&id=$services_[serviceid]' title='Click to delete'>Delete</a></td></tr>";
      }
       $serviceList .= '</tbody></table>';
      } 
