@@ -92,12 +92,6 @@ case 'register':
     }   
 case 'Login':
     //Filter and store data
-    echo "This should be the email =".$_POST['adminemail'];
-    echo "This should be the password =".$_POST['adminpassword'];
-    exit;
-
-    
-
     $adminemail = filter_input(INPUT_POST, "adminemail", FILTER_SANITIZE_EMAIL);
 
     $adminemail = checkEmail($adminemail);
