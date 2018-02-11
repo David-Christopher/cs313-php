@@ -37,7 +37,7 @@ if (isset($_SESSION['message'])) {
         <div class="management-content">
              <h2 class="management-h2">Welcome to the service management page. Please choose an option below:</h2>
             <ul>
-                <li><a href="assignments/project/services/index.php?action=newService">Add a New Service</a></li>
+                <li><a href="http://vast-savannah-73411.herokuapp.com/assignments/project/services/index.php?action=newService">Add a New Service</a></li>
             </ul>
 
                      
