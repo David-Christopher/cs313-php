@@ -25,7 +25,7 @@
         }	
 
         *, h1, h2, h3, h4, h5, h6, p.submission-message, p.service-details-page{
-		font-family: Georgia;		
+		font-family: "Bookman Old Style";		
 	}
         
 	p, a{
@@ -80,7 +80,7 @@
 	.my-account-link{
 		list-style: none;
 		text-decoration: none;
-		font-family: Georgia;
+		font-family: "Bookman Old Style";
 		color: #000000;
 		font-weight: 600;
 	}
@@ -294,7 +294,7 @@
     }
     
     p.submission-message{
-            font-family: Georgia;
+            font-family: "Bookman Old Style";
             color: #ffffff;
             font-size: 22px;
             padding-top: 20px;
@@ -323,7 +323,7 @@
     }
     
     p.failed-message{
-        font-family: Georgia;
+        font-family: "Bookman Old Style";
         font-size: 22px;
         padding-top: 20px;
         padding-bottom: 20px;
