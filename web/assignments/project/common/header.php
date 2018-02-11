@@ -7,9 +7,9 @@
                     
                     <?php if(isset($_SESSION['loggedin'])){
                                               
-                        if(isset($_SESSION['adminData']['servicename'])){
+                        if(isset($_SESSION['adminData']['adminfirstname'])){
                             echo "<a href='http://vast-savannah-73411.herokuapp.com/assignments/project/accounts/index.php?action=myAccount'>";
-                            printf("<span>Welcome %s</span>", $_SESSION['adminData']['servicename']);
+                            printf("<span>Welcome %s</span>", $_SESSION['adminData']['adminfirstname']);
                             echo "</a>";
                         } 
                     }
