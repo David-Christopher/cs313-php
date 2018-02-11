@@ -148,7 +148,10 @@ case 'updateService':
  
 case 'detail':
     $service = filter_input(INPUT_GET, 'service', FILTER_SANITIZE_NUMBER_INT);
-    $servicesDetails = getDetailsByService($service);    
+
+        echo $service;
+    exit; 
+    $servicesDetails = getDetailsByService($service);   
     
 //Passing invName to view title
     foreach($servicesDetails as $servicesName){
