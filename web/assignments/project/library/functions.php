@@ -27,7 +27,7 @@ function createNav() {
     $navList = '<ul>';
     $navList .= "<li><a href='http://vast-savannah-73411.herokuapp.com/assignments/project/index.php' title='View the project home page'>Home</a></li>";
     foreach ($services as $service) {
-    $navList .= "<li><a href='http://vast-savannah-73411.herokuapp.com/assignments/project/services/?action=service_l&type=$service[servicename]' title='View our $service[servicename] services'>$service[servicename]</a></li>";
+    $navList .= "<li><a href='http://vast-savannah-73411.herokuapp.com/assignments/project/services/?action=detail&service=$service[servicename]' title='View our $service[servicename] services'>$service[servicename]</a></li>";
     }
     $navList .= '</ul>';
     return $navList;

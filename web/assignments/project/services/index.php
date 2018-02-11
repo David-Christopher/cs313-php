@@ -133,18 +133,18 @@ case 'updateService':
    }
  break;
 
-case 'service_l':
-    $type = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_STRING);
-    $services_s = getServiceList($type);
+// case 'service_l':
+//     $type = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_STRING);
+//     $services_s = getServiceList($type);
     
-    if(!count($services_s)){
-     $message = "<p class='failed-message'>Sorry, no $type service could be found.</p>";
-    } else {
-     $serviceDisplay = buildServiceDisplay($services_s);
-    }
+//     if(!count($services_s)){
+//      $message = "<p class='failed-message'>Sorry, no $type service could be found.</p>";
+//     } else {
+//      $serviceDisplay = buildServiceDisplay($services_s);
+//     }
     
-    include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/services.php';
-break;
+//     include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/services.php';
+// break;
  
 case 'detail':
     $service = filter_input(INPUT_GET, 'service', FILTER_SANITIZE_NUMBER_INT);
