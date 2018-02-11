@@ -3,7 +3,7 @@
 // Services model
 
 // Insert service data to database
-function addServices($servicename, $servicedescription){
+function addService($servicename, $servicedescription){
 // Create a connection object using the project connection function
 $db = projectConnect();
 
