@@ -107,11 +107,13 @@ case 'Login':
       exit;
     }
 
+    $dbPassword = $adminData['adminpassword'];
+
     // A valid password exists, proceed with the login process
     // Query the admin data based on the email address
     $adminData = getAdmin($adminemail);
 
-    $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
+    $hashCheck = password_verify($adminpassword, $dbPassword);
 
     // If the hashes don't match create an error
     // and return to the login view

@@ -5,7 +5,7 @@
  */
 
 // Insert site visitor data to database
-function regAdmin($adminfirstname, $adminlastname, $adminemail, $adminpassword){
+function regAdmin($adminfirstname, $adminlastname, $adminemail, $hashedPassword){
 // Create a connection object using the project connection function
 $db = projectConnect();
 
@@ -19,7 +19,7 @@ $stmt = $db->prepare($sql);
 $stmt->bindValue(':adminfirstname', $adminfirstname, PDO::PARAM_STR);
 $stmt->bindValue(':adminlastname', $adminlastname, PDO::PARAM_STR);
 $stmt->bindValue(':adminemail', $adminemail, PDO::PARAM_STR);
-$stmt->bindValue(':adminpassword', $adminpassword, PDO::PARAM_STR);
+$stmt->bindValue(':adminpassword', $hashedPassword, PDO::PARAM_STR);
 
 // Insert the data
 $stmt->execute();
