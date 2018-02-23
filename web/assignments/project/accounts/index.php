@@ -217,6 +217,9 @@ case 'updateAdminpassword':
     $adminData = $_SESSION['adminData'];
     
     $adminpassword = filter_input(INPUT_POST, 'adminpassword');
+
+    echo $adminpassword;
+    exit;
     
     $passwordCheck = checkPassword($adminpassword);
 
