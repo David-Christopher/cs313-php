@@ -82,7 +82,7 @@ case 'register':
     // Check and report the result
     if($regOutcome === 1){
         setcookie('firstname', $adminfirstname, strtotime('+1 year'), '/');
-        $message = "<p class='submission-message'>Thanks for registering $adminfirstname.<br/> Please use your email and password to login.</p>";
+        $message = "<p class='submission-message'>Thanks for registering $adminfirstname.<br/> Please use your email and password ($adminData['adminpassword']) to login.</p>";
         include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/login.php';
      exit;
     } else {
@@ -114,10 +114,6 @@ case 'Login':
     $hashedPassword = password_hash($adminpassword, PASSWORD_DEFAULT);
     
     $hashCheck = password_verify($adminpassword, $hashedPassword);
-
-    echo($hashedPassword);
-    echo($adminData['adminpassword']);
-    exit;
 
     //***CORRECT PASSWORD_VERIFY BUT WON'T WORK***
     //PASSWORD VERIFY WILL NOT MATCH THE DATABASE HASH????
