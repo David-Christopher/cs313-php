@@ -100,8 +100,6 @@ case 'Login':
     $passwordCheck = checkPassword($adminpassword);
      
 
-    $hashedPassword = password_hash($adminpassword, PASSWORD_DEFAULT);
-
     // Run basic checks, return if errors
     if (empty($adminemail) || empty($passwordCheck)) {
       $message = "<p class='failed-message'>Please provide a valid email address and password.</p>";
@@ -113,7 +111,7 @@ case 'Login':
     // Query the admin data based on the email address
     $adminData = getAdmin($adminemail);
 
-    $hashCheck = password_verify($adminpassword, $hashedPassword);
+    $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
     
     // $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
 
