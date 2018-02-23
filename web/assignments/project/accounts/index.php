@@ -50,7 +50,7 @@ case 'register':
             FILTER_SANITIZE_EMAIL);
     $adminpassword = filter_input(INPUT_POST, 'adminpassword');
     $adminemail = checkEmail($adminemail);
-    $adminpassword = checkPassword($adminpassword);
+    $passwordCheck = checkPassword($adminpassword);
 
     //get result for if email already exists
     $existingEmail = checkExistingEmail($adminemail);
@@ -63,7 +63,7 @@ case 'register':
     }
 
     // Check for missing data
-    if (empty($adminfirstname) || empty($adminlastname) || empty($adminemail) || empty($adminpassword)) {
+    if (empty($adminfirstname) || empty($adminlastname) || empty($adminemail) || empty($passwordCheck)) {
         $message = "<p class='failed-message'>Please provide information for all empty form fields.</p>";   
         include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/registration.php';
         exit;
@@ -82,7 +82,7 @@ case 'register':
     // Check and report the result
     if($regOutcome === 1){
         setcookie('firstname', $adminfirstname, strtotime('+1 year'), '/');
-        $message = "<p class='submission-message'>Thanks for registering $adminfirstname.<br/> Please use your email and password ($adminpassword) to login.</p>";
+        $message = "<p class='submission-message'>Thanks for registering $adminfirstname.<br/> Please use your email and password to login.</p>";
         include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/login.php';
      exit;
     } else {
