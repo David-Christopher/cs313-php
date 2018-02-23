@@ -218,14 +218,16 @@ case 'updateAdminpassword':
     
     //Filter and store data
     $adminpassword = filter_input(INPUT_POST, 'adminpassword'); 
-    $checkPassword = checkPassword($adminpassword);
+    $passwordCheck = checkPassword($adminpassword);
+    var_dump($passwordCheck);
+    exit;
     
     $_SESSION['loggedin'] = TRUE;
     $_SESSION['adminData'] = $adminData;
     $adminid = $_SESSION['adminData']['adminid'];
         
     // Check for missing data
-    if (empty($checkPassword)) {
+    if (empty($passwordCheck)) {
         $message = "<p class='failed-message'>Please provide information for all form fields.</p>";   
         include $_SERVER['DOCUMENT_ROOT'].'/assignments/project/view/admin-update.php';
         exit;
