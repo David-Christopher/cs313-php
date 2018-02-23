@@ -113,7 +113,8 @@ case 'Login':
 
     $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
     
-    // $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
+    var_dump($hashCheck);
+    exit;
 
     // If the hashes don't match create an error
     // and return to the login view
