@@ -216,12 +216,10 @@ break;
 case 'updateAdminpassword': 
     $adminData = $_SESSION['adminData'];
     
-    //Filter and store data
-    $adminpassword = filter_input(INPUT_POST, 'adminpassword'); 
-    $passwordCheck = checkPassword($adminpassword);
-    var_dump($passwordCheck);
-    exit;
+    $adminpassword = filter_input(INPUT_POST, 'adminpassword');
     
+    $passwordCheck = checkPassword($adminpassword);
+
     $_SESSION['loggedin'] = TRUE;
     $_SESSION['adminData'] = $adminData;
     $adminid = $_SESSION['adminData']['adminid'];
