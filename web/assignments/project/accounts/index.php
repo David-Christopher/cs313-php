@@ -110,8 +110,15 @@ case 'Login':
     // A valid password exists, proceed with the login process
     // Query the admin data based on the email address
     $adminData = getAdmin($adminemail);
+    
+    $hashedPassword = password_hash($adminpassword, PASSWORD_DEFAULT);
+    
+    $hashCheck = password_verify($adminpassword, $hashedPassword);
 
-    $hashCheck = password_verify($adminpassword, $adminpassword);
+    //***CORRECT PASSWORD_VERIFY BUT WON'T WORK***
+    //PASSWORD VERIFY WILL NOT MATCH THE DATABASE HASH????
+    
+    // $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
 
     // If the hashes don't match create an error
     // and return to the login view
