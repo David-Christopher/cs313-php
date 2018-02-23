@@ -219,7 +219,7 @@ case 'updateAdminpassword':
     $adminpassword = filter_input(INPUT_POST, 'adminpassword');
 
     echo $adminpassword;
-    echo 'is it empty?'
+    echo 'is it empty?';
     exit;
     
     $passwordCheck = checkPassword($adminpassword);
