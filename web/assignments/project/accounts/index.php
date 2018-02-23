@@ -70,7 +70,7 @@ case 'register':
     }
     
     // Hash the checked password
-    $hashedPassword = password_hash($adminpassword, PASSWORD_BCRYPT);
+    $hashedPassword = password_hash($adminpassword, PASSWORD_DEFAULT);
     
     //echo $hashedPassword;
 
