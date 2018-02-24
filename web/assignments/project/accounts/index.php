@@ -113,12 +113,9 @@ case 'Login':
     
     $hashedPassword = password_hash($adminpassword, PASSWORD_DEFAULT);
     
-    $hashCheck = password_verify($adminpassword, $hashedPassword);
+    // $hashCheck = password_verify($adminpassword, $hashedPassword);
 
-    //***CORRECT PASSWORD_VERIFY BUT WON'T WORK***
-    //PASSWORD VERIFY WILL NOT MATCH THE DATABASE HASH????
-
-    // $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
+    $hashCheck = password_verify($adminpassword, $adminData['adminpassword']);
 
     // If the hashes don't match create an error
     // and return to the login view
