@@ -216,7 +216,7 @@ break;
 case 'updateAdminpassword': 
     $adminData = $_SESSION['adminData'];
     
-    $adminpassword = filter_input(INPUT_POST, 'adminpassword');
+    $adminpassword = $_POST['adminpassword'];
 
     echo $adminpassword;
     echo 'is it empty?';
