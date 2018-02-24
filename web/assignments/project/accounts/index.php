@@ -48,7 +48,7 @@ case 'register':
             FILTER_SANITIZE_STRING);
     $adminemail = filter_input(INPUT_POST, 'adminemail',
             FILTER_SANITIZE_EMAIL);
-    $adminpassword = filter_input(INPUT_POST, 'adminpassword');
+    $adminpassword = $_POST['adminpassword'];
     $adminemail = checkEmail($adminemail);
     $passwordCheck = checkPassword($adminpassword);
 
@@ -96,7 +96,7 @@ case 'Login':
 
     $adminemail = checkEmail($adminemail);
     
-    $adminpassword = filter_input(INPUT_POST, 'adminpassword');
+    $adminpassword = $_POST['adminpassword']; 
     $passwordCheck = checkPassword($adminpassword);
      
 
@@ -218,9 +218,6 @@ case 'updateAdminpassword':
     
     $adminpassword = $_POST['adminpassword'];
 
-    echo $adminpassword;
-    echo 'is it empty?';
-    exit;
     
     $passwordCheck = checkPassword($adminpassword);
 
