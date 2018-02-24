@@ -18,6 +18,7 @@
 
 		function mousedown(obj) {
 	    	obj.style.backgroundColor = 'yellow';
+	    	obj.style.color = 'black';
 		}
 		
 		function mouseup(obj) {
