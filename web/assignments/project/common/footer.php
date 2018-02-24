@@ -5,11 +5,15 @@
         function mouseOver(obj) {
 		    obj.style.backgroundColor = '#b30000';
 		    obj.style.fontSize = '14px';
+		    obj.style.color = '#ffffff';
+		    obj.style.padding = '10px';
 		}
 
 		function off1(obj) {
 		   	obj.style.fontSize = '12px';
-		   	obj.style.backgroundColor = 'none'; 
+		   	obj.style.backgroundColor = '#ffffff'; 
+		   	obj.style.color = 'black';
+		   	obj.style.padding = '0px';		   
 		}	
 
 		function mousedown(obj) {
