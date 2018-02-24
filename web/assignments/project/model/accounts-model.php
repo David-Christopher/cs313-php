@@ -79,12 +79,12 @@ function getAdminInfo($adminid){
 }
 
 //Update the admin
-function updateAdmin($adminfirstname, $adminlastname, $adminemail){
+function updateAdmin($adminfirstname, $adminlastname, $adminemail, $adminid){
 // Create a connection object using the project connection function
 $db = projectConnect();
 
 // The SQL statement
-$sql = 'UPDATE administrator SET adminfirstname = :adminfirstname, adminlastname = :adminlastname, adminemail = :adminemail';
+$sql = 'UPDATE administrator SET adminfirstname = :adminfirstname, adminlastname = :adminlastname, adminemail = :adminemail WHERE adminid = :adminid';
 
 // Create the prepared statement
 $stmt = $db->prepare($sql);
@@ -93,6 +93,7 @@ $stmt = $db->prepare($sql);
 $stmt->bindValue(':adminfirstname', $adminfirstname, PDO::PARAM_STR);
 $stmt->bindValue(':adminlastname', $adminlastname, PDO::PARAM_STR);
 $stmt->bindValue(':adminemail', $adminemail, PDO::PARAM_STR);
+$stmt->bindValue(':adminid', $adminid, PDO::PARAM_INT);
 
 // Insert the data
 $stmt->execute();

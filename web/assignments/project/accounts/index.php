@@ -196,7 +196,7 @@ case 'updateAdmin':
         }
     }
     
-    $updateAdminresult = updateAdmin($adminfirstname, $adminlastname, $adminemail);
+    $updateAdminresult = updateAdmin($adminfirstname, $adminlastname, $adminemail, $adminid);
     
     if ($updateAdminresult) {
      $message = "<p class='submission-message'>Congratulations, $adminfirstname account information was successfully updated.</p>";    
