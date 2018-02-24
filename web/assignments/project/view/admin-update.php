@@ -57,8 +57,8 @@ if(!isset($_SESSION['loggedin'])){
             <div class="label-div">
               <label><b>New Password</b></label>
               <p>*Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character</p>
-    
-              <input type="password" placeholder="Modify Password" name="adminPassword" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"><br/>
+
+               <input type="password" name="adminpassword" placeholder="Modify Password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"><br/>
               
               <input class="register-button" type="submit" name="submit" value="Change Password">
 
