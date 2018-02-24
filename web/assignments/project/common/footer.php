@@ -1,14 +1,15 @@
-        <p onmouseover="mouseOver(this)" onmouseout="off1(this)" onmousedown="mousedown(this)" onmouseup="mouseup(this)">&copy; Plumbing Co. All Rights Reserved</p>
-        <p onmouseover="mouseOver(this)" onmouseout="off1(this)" onmousedown="mousedown(this)" onmouseup="mouseup(this)">This is a school project for CS 313</p>
+        <p onmouseover="mouseOver(this)" onmouseout="off1(this)" onmousedown="mousedown(this)" onmouseup="mouseup(this)">&copy; Plumbing Co. All Rights Reserved<br>
+        This is a school project for CS 313</p>
         
         <script type="text/javascript">
         function mouseOver(obj) {
 		    obj.style.backgroundColor = '#b30000';
-		    obj.style.fontSize = '26px';
+		    obj.style.fontSize = '14px';
 		}
 
 		function off1(obj) {
-		   	obj.style.fontSize = '14px'; 
+		   	obj.style.fontSize = '12px';
+		   	obj.style.backgroundColor = 'none'; 
 		}	
 
 		function mousedown(obj) {
