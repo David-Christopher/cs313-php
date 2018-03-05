@@ -104,7 +104,7 @@ $sql = 'DELETE FROM services WHERE serviceid = :serviceid';
 $stmt = $db->prepare($sql);
 
 // Place holders are replaced and values/data type are passed
-$stmt->bindValue(':serviceId', $serviceId, PDO::PARAM_INT);
+$stmt->bindValue(':serviceid', $serviceid, PDO::PARAM_INT);
 
 
 // Insert the data
