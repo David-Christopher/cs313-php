@@ -46,7 +46,7 @@ if ($_SESSION['adminData']['adminlevel'] < 2) {
               
               <!--action name-value pair-->
               <input type="hidden" name="action" value="deleteService">
-              <input type="hidden" name="serviceid" value="<?php if(isset($serviceInfo['serviceid'])){ echo $serviceInfo['serviceid'];} ?>">
+              <input type="hidden" name="serviceid" value="<?php if(isset($serviceInfo['serviceid'])){ echo $serviceInfo['serviceid'];} elseif(isset($serviceid)){ echo $serviceid; } ?>">
             </div>
         </form>
     </main>
