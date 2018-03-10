@@ -108,7 +108,7 @@ function computeOperation(response, operation, weight) {
 			result = '$5.50'; 
 		}
 	} else {
-		result = "We apologize for the inconvenience. Your entries were invalid. Please try again by entering a weight and choosing an shipping option. Thank you!"
+		result = "We apologize for the inconvenience. Your entries are invalid. Please try again by entering a weight and choosing an shipping option. Thank you!"
 	}
 
 	// Set up a JSON object of the values we want to pass along to the EJS result page
@@ -116,6 +116,6 @@ function computeOperation(response, operation, weight) {
 
 	// Render the response, using the EJS page "result.ejs" in the pages directory
 	// Makes sure to pass it the parameters we need.
-	response.render('pages/result', params);
+	response.render('views/pages/result', params);
 
 }
