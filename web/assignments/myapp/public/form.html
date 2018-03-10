@@ -5,17 +5,17 @@
 </head>
 <body>
 	<h1>Postal Rate Submission Form</h1>
-	<form action="http://vast-savannah-73411.herokuapp.com/assignments/myapp/views/pages/result.ejs" method="get">
+	<form action="/getRate" method="get">
 	<input type="number" name="weight" placeholder="Enter Package Weight">
 		<select name="operation">
-			<option>Letters (Stamped)</option>
-			<option>Letters (Metered)</option>
-			<option>Large Envelopes (Flats)</option>
+			<option>Letters Stamped</option>
+			<option>Letters Metered</option>
+			<option>Large Envelopes Flats</option>
 			<option>First-Class Package Service—Retail</option>
 		</select>
 
 		<br><br>
-		<input type="submit" value="Get Result">
+		<input type="submit" value="Get Rate">
 
 	</form>
 </body>
