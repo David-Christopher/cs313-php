@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Stock Details</title>
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>Enter Company Stock Ticker</h1>
+	<!-- <form action="/getStock" method="get"> -->
+	<input type="text" name="ticker" id="ticker" placeholder="Enter Company Stock Ticker (Ex.'APPL')">
+	<br><br>
+	<input type="submit" id="getStock" value="Get Stock Prices">
+
+	<!-- </form> -->
+
+	<div id="resultSection">
+		<h2>Stock Results</h2>
+		<ul id="dataResults">
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+
+		$('#getStock').click(function(event) {
+		    event.preventDefault();
+
+		    $.ajax({
+		        global: false,
+		        type: 'GET',
+		        url: '/getStock',
+		        dataType: 'html',
+		        data: {
+		            ticker: $("#ticker").val()
+		        },
+		        success: function (result) {
+		            console.log(result);
+		        },
+		        error: function (request, status, error) {
+		            serviceError();
+		        }
+		    })
+		 //    .done(function(data){
+			// 	console.log('GET response:', JSON.stringify(data, "", 2));
+			// 	$('#resultSection').html(JSON.stringify(data, "", 2));
+			// })
+			.done(function(data){
+				console.log('GET response:', JSON.stringify(data, "", 2));
+				var obj = JSON.parse(data);
+				var lastRefreshed = obj['Meta Data']['3. Last Refreshed'];
+				var lastPrices = obj['Time Series (1min)'][lastRefreshed];
+				$('#resultSection').html(JSON.stringify(lastPrices));
+			})
+			.fail(function(jqXHR, textStatus, err){
+				console.log('AJAX error response:', textStatus);
+			});
+		});
+	</script>
+</body>
+</html>
