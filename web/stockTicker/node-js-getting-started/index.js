@@ -45,26 +45,6 @@ function handleStock(request, response){
 
 	alpha.data.intraday(ticker).then(data => {
   		response.send(data);
-  		//updateResults(data)
 	});
 
 }
-
-// function updateResults(data) {
-
-// 	if (data.Search && data.Search.length > 0) {
-// 		var resultList = $("#dataResults");
-// 		resultList.empty();
-
-// 		for (var i = 0; i < data.Search.length; i++) {
-// 			var title = data.Search[i].Title;
-// 			var poster = data.Search[i].Poster;
-// 			resultList.append("<li class='title'><p>" + title + "</p></li>");
-// 		} 
-// 	} else {
-// 			var resultList = $("#dataResults");
-// 			resultList.empty();
-// 			resultList.append("<li class='title'><p>Please check your stock ticker for accuracy and resubmit your inquery</p></li>");
-// 		}
-
-// }

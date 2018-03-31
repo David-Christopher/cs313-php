@@ -1,27 +1,101 @@
-.jumbotron {
-  background: #532F8C;
+.jumbotron{
+  background: #ffffff;
   color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+  padding-bottom: 50px; 
 
+}
+
+.jumbotron.btn-primary {
+  background: #845ac7;
+  border-color: #845ac7; 
+}
+
+.jumbotron.btn-primary:hover {
+  background: #7646c1; 
+}
+
+.jumbotronp {
+  color: #d9ccee;
+  max-width: 75%;
+  margin: 1em auto 2em; 
+}
+
+.navbar + .jumbotron{
+  margin-top: -20px; 
+}
+
+.jumbotron.lang-logo {
+  display: block;
+  background: #B01302;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 2px solid white; 
+}
+
+.jumbotron.lang-logo img {
+  max-width: 100%; 
+}
+
+.container p {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.container.image img {
+  width: 100%;
+}
+
+.jumbotron h1 {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #222222;
+  font-size: 36px;
+}
+
+hr.title_break.center {
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #222222;
+}
+
+#ticker {
+  display: inline-block;
+  width: 300px;
+}
+
+.center-input {
+  width: 425px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+ul#dataResults {
+  padding: 0;
+}
+
+.tickerHistory, .delete {
+  display: inline-block;
+}
+
+.tickerHistory {
+  padding-right: 15px;
+}
+
+.delete {
+  color: red;
+  font-weight: 600;
+}
+
+.delete:hover {
+  color: pink;
+  text-decoration: none;
+}
